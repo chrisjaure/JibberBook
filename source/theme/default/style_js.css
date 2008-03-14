@@ -1,0 +1,12 @@
+/*-------------------------------------------------------------------------------------
+//	JibberBook v2.0
+//	(c) 2007 Chris Jaure
+//	license: MIT License
+//	website: http://www.chromasynthetic.com/
+//
+//	inc/jbstyle_js.css
+-------------------------------------------------------------------------------------*/
+#jb_message {
+  position:absolute;
+  width:300px;
+}

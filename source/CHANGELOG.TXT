@@ -1,0 +1,2 @@
+[11-17-07] - Fixed syntax error in data_layer/mysql/comments.php
+[11-06-07] - Added file locking to data_layer/xml/comments.php
