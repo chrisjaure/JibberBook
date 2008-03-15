@@ -1,0 +1,43 @@
+<?php
+define('JB_T_SERVER_ERROR', "An error has occurred.");
+define('JB_T_COMMENTS_LOADED', "All comments have been loaded.");
+define('JB_T_LOADING', "Loading...");
+define('JB_T_ERROR', "Your comment could not be added. Please try again later.");
+define('JB_T_COMMENTS_LOADING', "More comments are loading. If you are using the scrollbar, please release your mouse.");
+define('JB_T_ADDED', "Your comment has been added.");
+define('JB_T_WRITES', "writes...");
+define('JB_T_POSTED_ON', "Posted on");
+define('JB_T_VALIDATE_URL', "Website is not a valid URL.");
+define('JB_T_VALIDATE_REQUIRED', "Name and Comment fields are required.");
+define('JB_T_VALIDATE_SPAM', "This comment has been flagged as spam and has been added to the moderation queue.");
+define('JB_T_COMMENT', "Comment");
+define('JB_T_NAME', "Name");
+define('JB_T_WEBSITE', "Website");
+define('JB_T_REQUIRED', "(required)");
+define('JB_T_ADD_COMMENT', "Add Comment");
+define('JB_T_NO_FILL', "Do not fill the field out.");
+define('JB_T_NO_JS', "Only the most recent comments are showing. You need JavaScript to view all the comments.");
+
+define('JB_T_ADMIN_LOGIN', "Log In");
+define('JB_T_ADMIN_PASSWORD', "Password");
+define('JB_T_ADMIN_ALL_HAM', "All Ham");
+define('JB_T_ADMIN_ALL_SPAM', "All Spam");
+define('JB_T_ADMIN_RECENT_HAM', "Recent Ham");
+define('JB_T_ADMIN_RECENT_SPAM', "Recent Spam");
+define('JB_T_ADMIN_DELETE_SPAM', "Delete All Spam");
+define('JB_T_ADMIN_SPAM', "Spam");
+define('JB_T_ADMIN_HAM', "Ham");
+define('JB_T_ADMIN_RECENT', "Recent");
+define('JB_T_ADMIN_LOGOUT', "Logout");
+define('JB_T_ADMIN_VIEW', "View Guestbook");
+define('JB_T_ADMIN_DASHBOARD', "Dashboard");
+define('JB_T_ADMIN_ERROR', "An error has occurred.");
+define('JB_T_ADMIN_LOADING', "Loading...");
+define('JB_T_ADMIN_DELETED', "The comment has been deleted.");
+define('JB_T_ADMIN_SPAM_DELETED', "All spam comments have been deleted.");
+define('JB_T_ADMIN_NO_LOAD', "No comments to load.");
+define('JB_T_ADMIN_PASSWORD_ERROR', "Incorrect password.");
+define('JB_T_ADMIN_RECLASSIFIED', "The comment has been reclassified");
+define('JB_T_ADMIN_NOT_SPAM', "Not Spam");
+define('JB_T_ADMIN_DELETE', "Delete");
+?>
