@@ -10,13 +10,14 @@
 
 require_once('../inc/secure.php');
 require_once('../../inc/config.php');
+require_once('../../localization/' . JB_LANGUAGE . '.php');
 require_once('../../microakismet/class.microakismet.inc.php');
 require_once('../../inc/comments.php');
 
 $id = $_GET['id'];
 $storage = new Comments();
 $storage->reclassifyComment($id);
-$message = "The comment has been reclassified.";
+$message = JB_T_ADMIN_RECLASSIFIED;
 if (isset($_GET['_ajax'])) {
   echo "{'value':'1', 'message':'$message', 'id':'$id'}";
 } else {

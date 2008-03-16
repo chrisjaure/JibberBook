@@ -13,10 +13,12 @@ define('JB_T_VALIDATE_SPAM', "This comment has been flagged as spam and has been
 define('JB_T_COMMENT', "Comment");
 define('JB_T_NAME', "Name");
 define('JB_T_WEBSITE', "Website");
-define('JB_T_REQUIRED', "(required)");
+define('JB_T_REQUIRED', "required");
 define('JB_T_ADD_COMMENT', "Add Comment");
 define('JB_T_NO_FILL', "Do not fill the field out.");
 define('JB_T_NO_JS', "Only the most recent comments are showing. You need JavaScript to view all the comments.");
+define('JB_T_ADD', "Add it!");
+define('JB_T_COMMENTS', "Comments");
 
 define('JB_T_ADMIN_LOGIN', "Log In");
 define('JB_T_ADMIN_PASSWORD', "Password");

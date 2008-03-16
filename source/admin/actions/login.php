@@ -15,7 +15,7 @@ if ($password == JB_PASSWORD) {
   $_SESSION['admin'] = true;
 } else {
   $_SESSION['message_type'] = 'error';
-  $_SESSION['message'] = 'Incorrect password.';
+  $_SESSION['message'] = JB_T_ADMIN_PASSWORD_ERROR;
 }
 $url = 'http://' . $_SERVER['HTTP_HOST'] . dirname(dirname($_SERVER['REQUEST_URI'] . 'x')) . '/index.php';
 header("Location: $url");

@@ -10,39 +10,54 @@
 
 header('Content-type: text/html; charset=utf-8');
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
- "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<head>
-<title>JibberBook Dashboard</title>
-<script type="text/javascript" src="../inc/mootools.v1.11.js"></script>
-<script type="text/javascript" src="inc/jbascript_min.js"></script>
-<script type="text/javascript">
-window.addEvent('load', guestbookAdmin.initialize.bind(guestbookAdmin));
-</script>
-<link rel="stylesheet" type="text/css" href="inc/jbastyle.css" />
-</head>
-<body>
-<div id="container">
-  <div id="header">
-    <h1>
-      <img src="media/logo.png" alt="" /><strong>Jibber</strong>Book<br />
-      <span>Dashboard</span>
-    </h1>
-  </div>
-  <div id="nav">
-    <?php if (isset($loggedin)) : ?>
-      <ul>
-        <li><a id="recent_link" href="index.php">Recent</a></li>
-        <li><a id="ham_link" href="ham.php">Ham</a></li>
-        <li><a id="spam_link" href="spam.php">Spam</a></li>
-        <li><a id="logout_link" href="actions/logout.php">Logout</a></li>
-      </ul>
-    <?php else : ?>
-      <a href="../">&#171; View Guestbook</a>
-    <?php endif; ?>
-  </div>
-  <div id="content">
-  <div id="message" class="<?php echo $_SESSION['message_type']; ?>">
-    <p><?php echo $_SESSION['message']; ?></p>
-  </div>
+    <head>
+        <title>JibberBook <?php echo JB_T_ADMIN_DASHBOARD; ?></title>
+        <script type="text/javascript" src="../inc/mootools.v1.11.js">
+        </script>
+        <script type="text/javascript" src="inc/jbascript.js">
+        </script>
+        <script type="text/javascript">
+            var lang = {
+                ERROR: "<?php echo JB_T_ADMIN_ERROR; ?>",
+                LOADING: "<?php echo JB_T_ADMIN_LOADING; ?>"
+            };
+            window.addEvent('load', guestbookAdmin.initialize.pass(lang, guestbookAdmin));
+        </script>
+        <link rel="stylesheet" type="text/css" href="inc/jbastyle.css"/>
+    </head>
+    <body>
+        <div id="container">
+            <div id="header">
+                <h1><img src="media/logo.png" alt=""/><strong>Jibber</strong>Book
+                    <br/>
+                    <span><?php echo JB_T_ADMIN_DASHBOARD; ?></span>
+                </h1>
+            </div>
+            <div id="nav">
+                <?php if (isset($loggedin)) : ?>
+                <ul>
+                    <li>
+                        <a id="recent_link" href="index.php"><?php echo JB_T_ADMIN_RECENT; ?></a>
+                    </li>
+                    <li>
+                        <a id="ham_link" href="ham.php"><?php echo JB_T_ADMIN_HAM; ?></a>
+                    </li>
+                    <li>
+                        <a id="spam_link" href="spam.php"><?php echo JB_T_ADMIN_SPAM; ?></a>
+                    </li>
+                    <li>
+                        <a id="logout_link" href="actions/logout.php"><?php echo JB_T_ADMIN_LOGOUT; ?></a>
+                    </li>
+                </ul>
+                <?php else : ?>
+                <a href="../">&#171; <?php echo JB_T_ADMIN_VIEW; ?></a>
+                <?php endif; ?>
+            </div>
+            <div id="content">
+                <div id="message" class="<?php echo $_SESSION['message_type']; ?>">
+                    <p>
+                        <?php echo $_SESSION['message']; ?>
+                    </p>
+                </div>

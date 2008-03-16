@@ -10,19 +10,20 @@
 
 require_once('../inc/secure.php');
 require_once('../../inc/config.php');
+require_once('../../localization/' . JB_LANGUAGE . '.php');
 require_once('../../inc/comments.php');
 
 $storage = new Comments();
 
 if (isset($_GET['id'])) {
   $id = $_GET['id'];
-  $message = 'The comment has been deleted.';
+  $message = JB_T_ADMIN_DELETED;
   $storage->deleteComment($id);
 }
 
 if (isset($_GET['type'])) {
   $id = 'all';
-  $message = 'All spam comments have been deleted.';
+  $message = JB_T_ADMIN_SPAM_DELETED;
   $storage->deleteSpam();
 }
 

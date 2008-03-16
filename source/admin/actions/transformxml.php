@@ -29,7 +29,7 @@ function transformXML($input, $type){
     <div class="edit">
       <?php echo date('j M y, H:i:s', (int) $input['date']); ?> - [ 
       <!-- <a class="edit_comment" href="actions/edit.php?id=<?php echo $input['id']; ?>">Edit</a> | --> 
-      <a class="delete_comment" href="actions/delete.php?id=<?php echo $input['id']; ?>">Delete</a> | 
+      <a class="delete_comment" href="actions/delete.php?id=<?php echo $input['id']; ?>"><?php echo JB_T_ADMIN_DELETE; ?></a> | 
       <?php echo $reclassify; ?> ]
     </div>
   </div>
