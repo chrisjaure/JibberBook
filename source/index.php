@@ -57,26 +57,17 @@ require_once('localization/' . JB_LANGUAGE . '.php');
                         <fieldset>
                             <input type="hidden" id="_ajax" name="_ajax" value="false"/>
                             <label for="name">
-                                <?php echo JB_T_NAME; ?>
-                                : <span class="required">(
-                                    <?php echo JB_T_REQUIRED; ?>
-                                    )</span>
+                                <?php echo JB_T_NAME; ?>: <span class="required">(<?php echo JB_T_REQUIRED; ?>)</span>
                             </label>
                             <input id="name" name="name" type="text" value="<?php echo $_SESSION['form_name']; ?>"/>
                             <label for="website">
-                                <?php echo JB_T_WEBSITE; ?>
-                                :
+                                <?php echo JB_T_WEBSITE; ?>:
                             </label>
                             <input id="website" name="website" type="text" value="<?php echo $_SESSION['form_website']; ?>"/>
                             <label for="comment">
-                                <?php echo JB_T_COMMENT; ?>
-                                : <span class="required">(
-                                    <?php echo JB_T_REQUIRED; ?>
-                                    )</span>
+                                <?php echo JB_T_COMMENT; ?>: <span class="required">(<?php echo JB_T_REQUIRED; ?>)</span>
                             </label>
-                            <textarea id="comment" rows="" cols="" name="comment">
-                                <?php echo $_SESSION['form_comment']; ?>
-                            </textarea>
+                            <textarea id="comment" rows="" cols="" name="comment"><?php echo $_SESSION['form_comment']; ?></textarea>
                             <label class="hidden" for="jbemail">
                                 <?php echo JB_T_NO_FILL; ?>
                             </label>

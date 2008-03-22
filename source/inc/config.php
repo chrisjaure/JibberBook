@@ -20,7 +20,7 @@ define('JB_LANGUAGE', 'en');
 define('JB_PASSWORD', 'password');
 
 // For more information on HTML Purifier go to http://www.htmlpurifier.org/
-define('JB_ENABLE_HTML_PURIFIER', false);
+define('JB_ENABLE_HTML_PURIFIER', true);
 define('JB_ENCODING', 'UTF-8');
 define('JB_DOCTYPE', 'XHTML 1.0 Strict');
 define('JB_ALLOWED_ELEMENTS', 'a[href|title],blockquote,p,em,strong,i,b,br,cite');
