@@ -1,6 +1,6 @@
 -----------------------------------------------------------
 JibberBook v2.0
-(c) 2007 Chris Jaure
+(c) 2008 Chris Jaure
 license: MIT License
 website: http://www.chromasynthetic.com/
 -----------------------------------------------------------
@@ -19,6 +19,8 @@ INSTALLATION:
 2. Open jibberbook/inc/config.php and on line 19, change 'password' to a password of your choice.
 
 3. Upload the files to your web server.
+
+If you plan on using HTML Purifier, make sure your server has permission to write to: jibberbook/htmlpurifier/standalone/HTMLPurifier/DefinitionCache/Serializer
 
 If you want to use a MySQL database instead of XML, copy jibberbook/data_layer/mysql/comments.php and paste it to jibberbook/inc/. In that file, enter your database settings and a name for the table, which will be created automatically.
 
