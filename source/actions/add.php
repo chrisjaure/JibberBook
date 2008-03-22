@@ -44,6 +44,14 @@ $data['user_ip'] = $_SERVER['REMOTE_ADDR'];
 $data['user_agent'] = $_SERVER['HTTP_USER_AGENT'];
 $data['spam'] = 0;
 
+if (JB_ENABLE_EMOTICONS) {
+    foreach($EMOTICONS as $key => $emote) {
+        $safe = htmlspecialchars($key);
+        $emote = '<img src="' . JB_EMOTICONS . $emote . '" title="' . $safe . '" alt="' . $safe . '" />';
+        $data['comment'] = str_replace($key, $emote, $data['comment']);
+    }
+}
+
 require_once("validateform.php");
 $message = JB_T_ADDED;
 $value = '1';
@@ -55,6 +63,7 @@ if (JB_ENABLE_HTML_PURIFIER) {
     
     $config = HTMLPurifier_Config::createDefault();
     $config->set('Core', 'Encoding', JB_ENCODING);
+    $config->set('Core', 'AggressivelyFixLt', true);
     $config->set('HTML', 'Doctype', JB_DOCTYPE);
     $config->set('HTML', 'Allowed', JB_ALLOWED_ELEMENTS);
     

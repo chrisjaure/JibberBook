@@ -9,6 +9,7 @@
 //-------------------------------------------------------------------------------------
 
 require_once(realpath(dirname(__FILE__) . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'inc' . DIRECTORY_SEPARATOR . 'config.php'));
+require_once(realpath(dirname(__FILE__) . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'localization' . DIRECTORY_SEPARATOR . JB_LANGUAGE . '.php'));
 require_once(realpath(dirname(__FILE__) . DIRECTORY_SEPARATOR . 'transformxml.php'));
 require_once(realpath(dirname(__FILE__) . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'inc' . DIRECTORY_SEPARATOR . 'comments.php'));
 

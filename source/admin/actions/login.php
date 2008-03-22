@@ -9,6 +9,7 @@
 //-------------------------------------------------------------------------------------
 
 require_once('../../inc/config.php');
+require_once('../../localization/' . JB_LANGUAGE . '.php');
 $password = $_POST['jbpassword'];
 session_start();
 if ($password == JB_PASSWORD) {
