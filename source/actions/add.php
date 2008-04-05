@@ -80,6 +80,14 @@ $data['comment'] = htmlspecialchars($data['comment'], ENT_QUOTES);
 $storage = new Comments();
 $data['id'] = $storage->addComment($data);
 
+if (JB_EMAIL && !$data['spam']) {
+    $to = JB_EMAIL;
+    $subject = "JibberBook comment from {$data['name']}!";
+    $comment = wordwrap($data['comment'], 70);
+    $headers = 'From: noreply@jibberbook.com';
+    mail($to, $subject, $comment, $headers);
+}
+
 if ($ajax) {
     require_once("transformxml.php");
     echo "{'value':'$value', 'content':'";

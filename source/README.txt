@@ -20,7 +20,7 @@ INSTALLATION:
 
 3. Upload the files to your web server.
 
-If you plan on using HTML Purifier, make sure your server has permission to write to: jibberbook/htmlpurifier/standalone/HTMLPurifier/DefinitionCache/Serializer
+If you plan on using HTML Purifier, your server MUST have permission to write to jibberbook/htmlpurifier/standalone/HTMLPurifier/DefinitionCache/Serializer
 
 If you want to use a MySQL database instead of XML, copy jibberbook/data_layer/mysql/comments.php and paste it to jibberbook/inc/. In that file, enter your database settings and a name for the table, which will be created automatically.
 
@@ -37,17 +37,21 @@ You can change (on line number):
 14. How many comments are loaded at a time. A good range is 20-50.
 15. The date format. For other date formats, go to http://php.net/manual/en/function.date.php
 16. The folder name of the theme to be used.
+17. If true, basic emoticons will be replaced with images. Set to false to disable the behavior.
+18. Location of the emoticon images.
 
-19. The password for the admin section.
 
-22. If true, HTML Purifier will be used to filter HTML. If false, all tags will be stripped. For more information on HTML Purifier, go to http://htmlpurifier.org/
-23. The character encoding of your page. Required by HTML Purifier.
-24. The doctype of your page. Required by HTML Purifier.
-25. Allowed HTML elements and attributes. Required by HTML Purifier.
+22. The password for the admin section.
 
-28. Your Akismet key. If a key is provided, Akismet will be used to filter spam. If a key is not provided, a simple spam filtration technique will be used. For more information on Akismet, go to http://akismet.com/
-29. The URL of the guestbook page. Required by Akismet.
+25. If true, HTML Purifier will be used to filter HTML. If false, all tags will be stripped. For more information on HTML Purifier, go to http://htmlpurifier.org/
+26. The character encoding of your page. Required by HTML Purifier.
+27. The doctype of your page. Required by HTML Purifier.
+28. Allowed HTML elements and attributes. Required by HTML Purifier.
 
+31. Your Akismet key. If a key is provided, Akismet will be used to filter spam. If a key is not provided, a simple spam filtration technique will be used. For more information on Akismet, go to http://akismet.com/
+32. The URL of the guestbook page. Required by Akismet.
+
+35. If emoticon replacement is enabled, the keys will be replaced by the images. Feel free to add your own, but be aware that speed was favored over power when adding this behavior. Emoticons that use the same characters, such as -_- and -_-; will break it.
 
 ADMINISTRATION:
 

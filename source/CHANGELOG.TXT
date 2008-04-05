@@ -1,3 +1,5 @@
+[04-05-08] - Added email notification
+[03-22-08] - Added basic emoticon support
 [03-21-08] - Upgraded to HTMLPurifier 3.0 standalone version
 [03-16-08] - Localization files can now be used.
 [11-17-07] - Fixed syntax error in data_layer/mysql/comments.php

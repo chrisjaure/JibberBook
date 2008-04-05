@@ -17,6 +17,7 @@ define('JB_THEME', 'default');
 define('JB_LANGUAGE', 'en');
 define('JB_ENABLE_EMOTICONS', true);
 define('JB_EMOTICONS', 'emoticons/');
+define('JB_EMAIL', false);
 
 // password for admin area
 define('JB_PASSWORD', 'password');
