@@ -10,9 +10,9 @@
 
 function transformXML($input, $type){
   if ($type == 'ham'){
-    $reclassify = '<a class="mark_spam" href="actions/reclassify.php?type=spam&id=' . $input['id'] . '">Spam</a>';
+    $reclassify = '<a class="mark_spam" href="actions/reclassify.php?type=spam&id=' . $input['id'] . '">' . __('Spam') . '</a>';
   } else {
-    $reclassify = '<a class="mark_ham" href="actions/reclassify.php?type=ham&id=' . $input['id'] . '">Not Spam</a>';
+    $reclassify = '<a class="mark_ham" href="actions/reclassify.php?type=ham&id=' . $input['id'] . '">' . __('Not Spam') . '</a>';
   }
   $input['comment'] = str_replace(array("\r\n", "\n", "\r"), '<br />', htmlspecialchars_decode($input['comment'], ENT_COMPAT));
   ?>
@@ -29,7 +29,7 @@ function transformXML($input, $type){
     <div class="edit">
       <?php echo date('j M y, H:i:s', (int) $input['date']); ?> - [ 
       <!-- <a class="edit_comment" href="actions/edit.php?id=<?php echo $input['id']; ?>">Edit</a> | --> 
-      <a class="delete_comment" href="actions/delete.php?id=<?php echo $input['id']; ?>"><?php echo JB_T_ADMIN_DELETE; ?></a> | 
+      <a class="delete_comment" href="actions/delete.php?id=<?php echo $input['id']; ?>"><?php _e('Delete'); ?></a> | 
       <?php echo $reclassify; ?> ]
     </div>
   </div>

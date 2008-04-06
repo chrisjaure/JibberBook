@@ -8,17 +8,17 @@
 //	admin/spam.php
 //-------------------------------------------------------------------------------------
 
-require_once('../inc/config.php');
-require_once('../localization/' . JB_LANGUAGE . '.php');
 require_once('inc/secure.php');
+require_once('../inc/includes.php');
+includes(array('admin/actions/load.php', 'admin/actions/transformxml.php'));
+
 $_SESSION['referer'] = 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
 require_once('inc/header.php');
 ?>
 
-<h2><?php echo JB_T_ADMIN_ALL_SPAM; ?></h2>
-<a id="delete_spam" href="actions/delete.php?type=spam"><?php echo JB_T_ADMIN_DELETE_SPAM; ?></a><br />
+<h2><?php _e('All Spam'); ?></h2>
+<a id="delete_spam" href="actions/delete.php?type=spam"><?php _e('Delete All Spam'); ?></a><br />
 <?php 
-require_once('actions/load.php');
 loadSpam();  
 ?>
 

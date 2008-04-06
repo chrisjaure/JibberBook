@@ -1,16 +1,15 @@
 <?php
 //-------------------------------------------------------------------------------------
 //	JibberBook v2.0
-//	(c) 2007 Chris Jaure
+//	(c) 2008 Chris Jaure
 //	license: MIT License
 //	website: http://www.chromasynthetic.com/
 //
 //	actions/add.php
 //-------------------------------------------------------------------------------------
 
-require_once('../inc/config.php');
-require_once('../localization/' . JB_LANGUAGE . '.php');
-require_once('../inc/comments.php');
+require_once('../inc/includes.php');
+includes(array('actions/transformxml.php'));
 
 // reset session vars
 session_start();
@@ -53,7 +52,7 @@ if (JB_ENABLE_EMOTICONS) {
 }
 
 require_once("validateform.php");
-$message = JB_T_ADDED;
+$message = __('Your comment has been added.');
 $value = '1';
 validateForm($data);
 

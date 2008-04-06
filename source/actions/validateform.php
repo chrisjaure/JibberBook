@@ -15,7 +15,7 @@ function validateForm(&$formData){
     if ($formData['website'] != '') {
         if (!preg_match('#((http://)|(www\.))+(([a-zA-Z0-9\._-]+\.[a-zA-Z]{2,6})|([0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}))(/[a-zA-Z0-9\&amp;%_\./-~-]*)?#', $formData['website'])) {
             $errornum = '4';
-            $errordesc = JB_T_VALIDATE_URL;
+            $errordesc = __('Website is not a valid URL.');
         }
         if (substr($formData['website'], 0, 7) != 'http://') {
             $formData['website'] = 'http://' . $formData['website'];
@@ -23,7 +23,7 @@ function validateForm(&$formData){
     }
     if ($formData['name'] == '' || $formData['comment'] == ''){
         $errornum = '3';
-        $errordesc = JB_T_VALIDATE_REQUIRED;
+        $errordesc = __('Name and Comment fields are required.');
     }
     if ($formData['jbemail'] != ''){ // if this field is filled in, it's probably spam
         $formData['spam'] = 1;
@@ -48,7 +48,7 @@ function validateForm(&$formData){
     }
     if ($formData['spam']) {
         $value = '2';
-        $message = JB_VALIDATE_SPAM;
+        $message = __('This comment has been flagged as spam and has been added to the moderation queue.');
         return;
     }
     

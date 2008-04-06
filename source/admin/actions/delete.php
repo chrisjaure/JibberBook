@@ -9,21 +9,19 @@
 //-------------------------------------------------------------------------------------
 
 require_once('../inc/secure.php');
-require_once('../../inc/config.php');
-require_once('../../localization/' . JB_LANGUAGE . '.php');
-require_once('../../inc/comments.php');
+require_once('../../inc/includes.php');
 
 $storage = new Comments();
 
 if (isset($_GET['id'])) {
   $id = $_GET['id'];
-  $message = JB_T_ADMIN_DELETED;
+  $message = __('The comment has been deleted.');
   $storage->deleteComment($id);
 }
 
 if (isset($_GET['type'])) {
   $id = 'all';
-  $message = JB_T_ADMIN_SPAM_DELETED;
+  $message = __('All spam comments have been deleted.');
   $storage->deleteSpam();
 }
 

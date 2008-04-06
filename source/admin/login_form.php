@@ -8,8 +8,8 @@
 //	admin/login_form.php
 //-------------------------------------------------------------------------------------
 
-require_once('../inc/config.php');
-require_once('../localization/' . JB_LANGUAGE . '.php');
+require_once('../inc/includes.php');
+
 session_start();
 if (isset($_SESSION['admin'])) {
   header("Location: index.php");
@@ -17,9 +17,9 @@ if (isset($_SESSION['admin'])) {
 }
 require('inc/header.php');
 ?>
-<h2><?php echo JB_T_ADMIN_LOGIN; ?></h2>
+<h2><?php _e('Log In'); ?></h2>
 <form action="actions/login.php" method="post">
-  <label for="jbpassword"><?php echo JB_T_ADMIN_PASSWORD; ?>:</label> <input type="password" id="jbpassword" name="jbpassword" />
-  <input class="button" type="image" alt="Log in" src="media/button.gif" />
+  <label for="jbpassword"><?php _e('Password'); ?>:</label> <input type="password" id="jbpassword" name="jbpassword" />
+  <input class="button" type="image" alt=<?php _e('Log In'); ?>" src="media/button.gif" />
 </form>
 <?php require('inc/footer.php'); ?>

@@ -8,10 +8,6 @@
 //	admin/actions/load.php
 //-------------------------------------------------------------------------------------
 
-require_once(realpath(dirname(__FILE__) . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'inc' . DIRECTORY_SEPARATOR . 'config.php'));
-require_once(realpath(dirname(__FILE__) . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'inc' . DIRECTORY_SEPARATOR . 'comments.php'));
-require_once(realpath(dirname(__FILE__) . DIRECTORY_SEPARATOR . 'transformxml.php'));
-
 function loadHam($num = null) {
   load(0, $num);
 }
@@ -24,7 +20,7 @@ function load($type, $show = null) {
   $storage = new Comments();
   $messages = $storage->getComments($type, $show);
   if (count($messages) == 0) {
-    echo '<p>No messages to load.</p>';
+    echo '<p>' . __('No comments to load.') . '</p>';
   }
   foreach ($messages as $message) {
     if ($message['name'] == '') continue;

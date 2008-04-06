@@ -9,8 +9,8 @@
 //-------------------------------------------------------------------------------------
 
 session_start(); // start the session so we can get any form values or errors set by non-ajax users
-require_once('inc/config.php');
-require_once('localization/' . JB_LANGUAGE . '.php');
+require_once('inc/includes.php');
+includes(array('actions/loadcomments.php', 'actions/transformxml.php'));
 
 ?>
  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
@@ -19,17 +19,18 @@ require_once('localization/' . JB_LANGUAGE . '.php');
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
         <title>JibberBook - Free AJAX Guestbook</title>
         <link rel="stylesheet" type="text/css" href="theme/<?php echo JB_THEME ?>/style.css"/>
+        <link rel="alternate" type="application/rss+xml" title="RSS" href="feed/" />
         <script type="text/javascript" src="inc/mootools.v1.11.js">
         </script>
         <script type="text/javascript" src="inc/jbscript.js">
         </script>
         <script type="text/javascript">
             var lang = {
-                SERVER_ERROR: "<?php echo JB_T_SERVER_ERROR; ?>",
-                COMMENTS_LOADED: "<?php echo JB_T_COMMENTS_LOADED; ?>",
-                LOADING: "<?php echo JB_T_LOADING; ?>",
-                ERROR: "<?php echo JB_T_ERROR; ?>",
-                COMMENTS_LOADING: "<?php echo JB_T_COMMENTS_LOADING; ?>"
+                SERVER_ERROR: "<?php _e('An error has occurred.'); ?>",
+                COMMENTS_LOADED: "<?php _e('All comments have been loaded.'); ?>",
+                LOADING: "<?php _e('Loading...'); ?>",
+                ERROR: "<?php _e('Your comment could not be added. Please try again later.'); ?>",
+                COMMENTS_LOADING: "<?php _e('More comments are loading. If you are using the scrollbar, please release your mouse.') ?>"
             };
             window.addEvent('load', Guestbook.initialize.pass(['jb_addComment', 'jb_comments', 'jb_message', 'jb_loading_message', lang], Guestbook));
             new Asset.css('theme/<?php echo JB_THEME; ?>/style_js.css');
@@ -50,45 +51,13 @@ require_once('localization/' . JB_LANGUAGE . '.php');
             </div>
             <div id="content">
                 <div id="primary">
-                    <form id="jb_addComment" method="post" action="actions/add.php">
-                        <h3>
-                            <?php echo JB_T_ADD_COMMENT; ?>
-                        </h3>
-                        <fieldset>
-                            <input type="hidden" id="_ajax" name="_ajax" value="false"/>
-                            <label for="name">
-                                <?php echo JB_T_NAME; ?>: <span class="required">(<?php echo JB_T_REQUIRED; ?>)</span>
-                            </label>
-                            <input id="name" name="name" type="text" value="<?php echo $_SESSION['form_name']; ?>"/>
-                            <label for="website">
-                                <?php echo JB_T_WEBSITE; ?>:
-                            </label>
-                            <input id="website" name="website" type="text" value="<?php echo $_SESSION['form_website']; ?>"/>
-                            <label for="comment">
-                                <?php echo JB_T_COMMENT; ?>: <span class="required">(<?php echo JB_T_REQUIRED; ?>)</span>
-                            </label>
-                            <textarea id="comment" rows="" cols="" name="comment"><?php echo $_SESSION['form_comment']; ?></textarea>
-                            <label class="hidden" for="jbemail">
-                                <?php echo JB_T_NO_FILL; ?>
-                            </label>
-                            <input class="hidden" id="jbemail" name="jbemail" type="text" value=""/><input type="submit" class="button" value="<?php echo JB_T_ADD; ?>"/>
-                        </fieldset>
-                    </form>
+                    <?php include('inc/templates/form.php'); ?>
                 </div>
                 <div id="secondary">
                     <h3>
-                        <?php echo JB_T_COMMENTS; ?>
+                        <?php _e('Comments'); ?>
                     </h3>
-                    <div id="jb_comments">
-                        <?php // get the comments from the xml file and render them
-                        require_once('actions/loadcomments.php');
-                        $more = loadComments(1);
-                        if ($more) : ?>
-                        <p id="jb_loading_message">
-                            <?php echo JB_T_NO_JS; ?>
-                        </p>
-                        <?php endif; ?>
-                    </div>
+                    <?php include('inc/templates/comments.php'); ?>
                 </div>
                 <div style="clear:both;">
                 </div>

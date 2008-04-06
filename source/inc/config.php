@@ -16,7 +16,7 @@ define('JB_DATE_FORMAT', 'F j, Y \a\t H:i:s');
 define('JB_THEME', 'default');
 define('JB_LANGUAGE', 'en');
 define('JB_ENABLE_EMOTICONS', true);
-define('JB_EMOTICONS', 'emoticons/');
+define('JB_EMOTICONS', 'http://localhost/jb/emoticons/');
 define('JB_EMAIL', false);
 
 // password for admin area
@@ -47,7 +47,7 @@ $EMOTICONS = array(
     'X(' =>    'angry.gif',
     'DX' =>    'yell.gif',
     'D:' =>    'jawdrop.gif',
-    ':/' =>    'befuddled.gif',
+//    ':/' =>    'befuddled.gif',
     ':\\' =>   'befuddled.gif',
     ':|' =>    'blank.gif',
     'X|' =>    'dead.gif',
