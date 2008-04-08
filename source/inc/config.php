@@ -47,7 +47,6 @@ $EMOTICONS = array(
     'X(' =>    'angry.gif',
     'DX' =>    'yell.gif',
     'D:' =>    'jawdrop.gif',
-//    ':/' =>    'befuddled.gif',
     ':\\' =>   'befuddled.gif',
     ':|' =>    'blank.gif',
     'X|' =>    'dead.gif',
