@@ -12,11 +12,10 @@
 define('JB_XML_FILENAME', 'comments.xml');
 define('JB_INDEX', 'index.php');
 define('JB_SHOW', 20);
-define('JB_DATE_FORMAT', 'F j, Y \a\t H:i:s');
+define('JB_DATE_FORMAT', 'F j, Y - H:i:s');
 define('JB_THEME', 'default');
-define('JB_LANGUAGE', 'en');
-define('JB_ENABLE_EMOTICONS', true);
-define('JB_EMOTICONS', 'http://localhost/jb/emoticons/');
+//define('JB_LANGUAGE', 'en');
+define('JB_EMOTICONS', false);
 define('JB_EMAIL', false);
 
 // password for admin area

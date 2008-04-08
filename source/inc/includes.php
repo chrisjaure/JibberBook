@@ -4,7 +4,9 @@ $dir = realpath(dirname(__FILE__) . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPAR
 
 require_once($dir . 'inc/config.php');
 require_once($dir . 'inc/functions.php');
-require_once($dir . 'localization/' . JB_LANGUAGE . '.php');
+if (defined(JB_LANGUAGE)) {
+    require_once($dir . 'localization/' . JB_LANGUAGE . '.php');
+}
 require_once($dir . 'inc/comments.php');
 
 function includes($files) {

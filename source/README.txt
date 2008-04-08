@@ -40,21 +40,20 @@ You can change (on line number):
 15. The date format. For other date formats, go to http://php.net/manual/en/function.date.php
 16. The folder name of the theme to be used.
 17. Language pack to be used. Should be the filename of any file in jibberbook/localization/ without the extension.
-18. If true, basic emoticons will be replaced with images. Set to false to disable the behavior.
-19. Location of the emoticon images. Must be an absolute url.
-20. Enter your email address here if you want notifications of new comments. Set to false to disable.
+18. Location of the emoticon images. Must be an absolute url. Set to false to disable emoticon replacement.
+19. Enter your email address here if you want notifications of new comments. Set to false to disable.
 
-23. The password for the admin section.
+22. The password for the admin section.
 
-26. If true, HTML Purifier will be used to filter HTML. If false, all tags will be stripped. For more information on HTML Purifier, go to http://htmlpurifier.org/
-27. The character encoding of your page. Required by HTML Purifier.
-28. The doctype of your page. Required by HTML Purifier.
-29. Allowed HTML elements and attributes. Required by HTML Purifier.
+25. If true, HTML Purifier will be used to filter HTML. If false, all tags will be stripped. For more information on HTML Purifier, go to http://htmlpurifier.org/
+26. The character encoding of your page. Required by HTML Purifier.
+27. The doctype of your page. Required by HTML Purifier.
+28. Allowed HTML elements and attributes. Required by HTML Purifier.
 
-32. Your Akismet key. If a key is provided, Akismet will be used to filter spam. If a key is not provided, a simple spam filtration technique will be used. For more information on Akismet, go to http://akismet.com/
-33. The URL of the guestbook page. Required by Akismet.
+31. Your Akismet key. If a key is provided, Akismet will be used to filter spam. If a key is not provided, a simple spam filtration technique will be used. For more information on Akismet, go to http://akismet.com/
+32. The URL of the guestbook page. Required by Akismet.
 
-36. If emoticon replacement is enabled, the keys will be replaced by the images. Feel free to add your own, but be aware that speed was favored over power when adding this behavior. Emoticons that use the same characters, such as -_- and -_-; will break it.
+35. If emoticon replacement is enabled, the keys will be replaced by the images. Feel free to add your own, but be aware that speed was favored over power when adding this behavior. Emoticons that use the same characters, such as -_- and -_-; will break it.
 
 ADMINISTRATION:
 
