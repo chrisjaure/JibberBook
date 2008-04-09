@@ -217,7 +217,7 @@ class Comments {
         $show = abs($limit['lower'] - $limit['upper']);
         $comments = array_slice($comments, $limit['lower'], $show);
       } else {
-        $comments = array_slice($comments, count($comments) - 5);
+        $comments = array_slice($comments, count($comments) - $limit);
       }
     }
     $data = array();
