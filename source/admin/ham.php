@@ -17,8 +17,8 @@ require_once('inc/header.php');
 ?>
 
 <h2><?php _e('All Ham'); ?></h2>
-<?php 
-loadHam();  
+<?php
+loadHam('paginate');
 ?>
 
 <?php require_once('inc/footer.php'); ?>

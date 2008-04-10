@@ -19,7 +19,7 @@ require_once('inc/header.php');
 <h2><?php _e('All Spam'); ?></h2>
 <a id="delete_spam" href="actions/delete.php?type=spam"><?php _e('Delete All Spam'); ?></a><br />
 <?php 
-loadSpam();  
+loadSpam('paginate');  
 ?>
 
 <?php require_once('inc/footer.php'); ?>
