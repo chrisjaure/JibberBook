@@ -118,6 +118,18 @@ $lang = array(
     "",
     
     "Delete" =>
+    "",
+    
+    "First" =>
+    "",
+    
+    "Previous" =>
+    "",
+    
+    "Next" =>
+    "",
+    
+    "Last" =>
     ""
 );
 ?>

@@ -30,10 +30,10 @@ function load($type, $show) {
         
         $pages = '<div class="result_nav">';
         if ($page > 1) {
-            $pages .= '<a href="?page=1"><img src="media/resultset_first.png" alt="First" /></a><a href="?page=' . ($page - 1) . '"><img src="media/resultset_previous.png" alt="Previous" /></a>';
+            $pages .= '<a href="?page=1"><img src="media/resultset_first.png" alt="' . __('First') . '" title="' . __('Title') . '" /></a><a href="?page=' . ($page - 1) . '"><img src="media/resultset_previous.png" alt="' . __('Previous') . '" title="' . __('Previous') . '" /></a>';
         }
         if ($count > $max * $page) {
-            $pages .= '<a href="?page=' . ($page + 1) . '"><img src="media/resultset_next.png" alt="Next" /></a><a href="?page=' . ceil($count / $max) . '"><img src="media/resultset_last.png" alt="Last" /></a>';
+            $pages .= '<a href="?page=' . ($page + 1) . '"><img src="media/resultset_next.png" alt="' . __('Next') . '" title="' . __('Next') . '" /></a><a href="?page=' . ceil($count / $max) . '"><img src="media/resultset_last.png" alt="' . __('Last') . '" title="' . __('Last') . '" /></a>';
         }
         $pages .= '</div>';
     }
