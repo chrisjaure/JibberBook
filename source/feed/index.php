@@ -1,4 +1,13 @@
 <?php
+//-------------------------------------------------------------------------------------
+//	JibberBook v2.1
+//	(c) 2008 Chris Jaure
+//	license: MIT License
+//	website: http://www.chromasynthetic.com/
+//
+//	feed/index.php
+//-------------------------------------------------------------------------------------
+
 require_once('../inc/includes.php');
 header('Content-type: text/xml');
 echo '<?xml version="1.0" encoding="UTF-8"?>';

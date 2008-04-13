@@ -1,6 +1,6 @@
 <?php
 //-------------------------------------------------------------------------------------
-//	JibberBook v2.0
+//	JibberBook v2.1
 //	(c) 2008 Chris Jaure
 //	license: MIT License
 //	website: http://www.chromasynthetic.com/

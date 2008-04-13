@@ -1,4 +1,13 @@
 <?php
+//-------------------------------------------------------------------------------------
+//	JibberBook v2.1
+//	(c) 2008 Chris Jaure
+//	license: MIT License
+//	website: http://www.chromasynthetic.com/
+//
+//	inc/includes.php
+//-------------------------------------------------------------------------------------
+
 // make it easier to include stuff
 $dir = realpath(dirname(__FILE__) . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR ) . '/';
 
