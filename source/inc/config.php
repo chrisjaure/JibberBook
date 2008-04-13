@@ -15,7 +15,7 @@ define('JB_SHOW', 20);
 define('JB_DATE_FORMAT', 'F j, Y - H:i:s');
 define('JB_THEME', 'default');
 //define('JB_LANGUAGE', 'en');
-define('JB_EMOTICONS', false);
+define('JB_EMOTICONS', 'emoticons/');
 define('JB_EMAIL', false);
 
 // password for admin area
@@ -35,14 +35,14 @@ define('JB_GUESTBOOK_URL', '');
 $EMOTICONS = array(
     ':)' =>    'smile.gif',
     ':-)' =>   'smile.gif',
-    '^_^' =>   'squee.gif',
     ':(' =>    'sad.gif',
     ':-(' =>   'sad.gif',
+    ':((' =>   'cry.gif',
+    ":'(" =>   'cry.gif',
     'XD' =>    'yesh.gif',
     ':D' =>    'biggrin.gif',
     '=D' =>    'happy.gif',
     ';)' =>    'wink.gif',
-    ":'(" =>   'cry.gif',
     'X(' =>    'angry.gif',
     'DX' =>    'yell.gif',
     'D:' =>    'jawdrop.gif',
@@ -53,16 +53,11 @@ $EMOTICONS = array(
     ':P' =>    'razz.gif',
     ':S' =>    'squiggle.gif',
     ':s' =>    'squiggle.gif',
-    '<3' =>    'love.gif',
-    '>_<' =>   'frustrated.gif',
     '=3' =>    'numnum.gif',
     ':o' =>    'gasp.gif',
     ':O' =>    'gasp.gif',
-    "-_-;" =>  'sweatdropworried.gif',
     ':<' =>    'sigh.gif',
     ':">' =>   'blush.gif',
-    '>.>' =>   'shifty.gif',
-    '<.<' =>   'shifty.gif'
 );
 
 

@@ -43,14 +43,6 @@ $data['user_ip'] = $_SERVER['REMOTE_ADDR'];
 $data['user_agent'] = $_SERVER['HTTP_USER_AGENT'];
 $data['spam'] = 0;
 
-if (JB_EMOTICONS) {
-    foreach($EMOTICONS as $key => $emote) {
-        $safe = htmlspecialchars($key);
-        $emote = '<img src="' . JB_EMOTICONS . $emote . '" title="' . $safe . '" alt="' . $safe . '" />';
-        $data['comment'] = str_replace($key, $emote, $data['comment']);
-    }
-}
-
 require_once("validateform.php");
 $message = __('Your comment has been added.');
 $value = '1';

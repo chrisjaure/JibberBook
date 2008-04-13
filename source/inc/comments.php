@@ -217,14 +217,16 @@ class Comments {
         $show = abs($limit['lower'] - $limit['upper']);
         $comments = array_slice($comments, $limit['lower'], $show);
       } else {
-        $comments = array_slice($comments, count($comments) - $limit - 1);
+        $end = count($comments) - $limit;
+        $end = ($end < 0) ? 0 : $end;
+        $comments = array_slice($comments, $end);
       }
     }
     $data = array();
     foreach ($comments as $key => $message) {
-      $data[$key]['name'] = htmlspecialchars((string)$message->name, ENT_QUOTES);
-      $data[$key]['website'] = htmlspecialchars((string)$message->website, ENT_QUOTES);
-      $data[$key]['comment'] = htmlspecialchars((string)$message->comment, ENT_QUOTES);
+      $data[$key]['name'] = (string)$message->name;
+      $data[$key]['website'] = (string)$message->website;
+      $data[$key]['comment'] = (string)$message->comment;
       $data[$key]['date'] = (string)$message->date;
       $data[$key]['id'] = (string)$message['mID'];
     }
