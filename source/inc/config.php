@@ -14,7 +14,7 @@ define('JB_INDEX', 'index.php');
 define('JB_SHOW', 20);
 define('JB_DATE_FORMAT', 'F j, Y - H:i:s');
 define('JB_THEME', 'default');
-//define('JB_LANGUAGE', 'en');
+define('JB_LANGUAGE', 'ru');
 define('JB_EMOTICONS', 'emoticons/');
 define('JB_EMAIL', false);
 
@@ -35,13 +35,14 @@ define('JB_GUESTBOOK_URL', '');
 $EMOTICONS = array(
     ':)' =>    'smile.gif',
     ':-)' =>   'smile.gif',
+    ':))' =>   'lol.gif',
     ':(' =>    'sad.gif',
     ':-(' =>   'sad.gif',
     ':((' =>   'cry.gif',
     ":'(" =>   'cry.gif',
     'XD' =>    'yesh.gif',
-    ':D' =>    'biggrin.gif',
-    '=D' =>    'happy.gif',
+    ':D' =>    'happy.gif',
+    '=D' =>    'biggrin.gif',
     ';)' =>    'wink.gif',
     'X(' =>    'angry.gif',
     'DX' =>    'yell.gif',
