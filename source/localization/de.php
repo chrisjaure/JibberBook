@@ -7,16 +7,16 @@ $lang = array(
     "Alle Kommentare wurden geladen.",
     
     "Loading..." =>
-    "Lädt...",
+    "LÃ¤dt...",
     
     "Your comment could not be added. Please try again later." =>
-    "Dein Kommenatr konnte nicht hinzugefügt werden. Bitte versuchen sie es später noch einmal.",
+    "Dein Kommenatr konnte nicht hinzugefÃ¼gt werden. Bitte versuchen sie es spÃ¤ter noch einmal.",
     
     "More comments are loading. If you are using the scrollbar, please release your mouse." =>
     "Mehr Kommentare werden geladen. Wenn sie den Scrollbalken benutzen, dann lassen sie bitte die Maus los.",
     
     "Your comment has been added." =>
-    "Dein Kommentar wurde hinzugefügt.",
+    "Dein Kommentar wurde hinzugefÃ¼gt.",
     
     "writes..." =>
     "schreibt...",
@@ -25,13 +25,13 @@ $lang = array(
     "Gepostet",
     
     "Website is not a valid URL." =>
-    "Webseite ist keine  gültige URL.",
+    "Webseite ist keine  gÃ¼ltige URL.",
     
     "Name and Comment fields are required." =>
-    "Name und Kommentarfeld müssen ausgefüllt werden.",
+    "Name und Kommentarfeld mÃ¼ssen ausgefÃ¼llt werden.",
     
     "This comment has been flagged as spam and has been added to the moderation queue." =>
-    "Dieser Kommentar wurde als Spam gemeldet und wurde auf die Warteliste der Moderatoren gesetzt zur Überprüfung.",
+    "Dieser Kommentar wurde als Spam gemeldet und wurde auf die Warteliste der Moderatoren gesetzt zur ÃœberprÃ¼fung.",
     
     "Comment" =>
     "Kommentar",
@@ -43,19 +43,19 @@ $lang = array(
     "Internetseite",
     
     "required" =>
-    "wird benötigt",
+    "wird benÃ¶tigt",
     
     "Add Comment" =>
-    "Kommentar hinzufügen",
+    "Kommentar hinzufÃ¼gen",
     
     "Do not fill out this field." =>
-    "Bitte dieses Feld nicht ausfüllen.",
+    "Bitte dieses Feld nicht ausfÃ¼llen.",
     
     "Only the most recent comments are showing. You need JavaScript to view them all." =>
     "Nur die neuesten Kommentare werden angezeigt. Du brauchstJavaScript um alle anzeigen zu lassen.",
     
     "Add it!" =>
-    "Hinzufügen!",
+    "HinzufÃ¼gen!",
     
     "Comments" =>
     "Kommentare",
@@ -79,7 +79,7 @@ $lang = array(
     "Neuer Spam",
     
     "Delete All Spam" =>
-    "Allen Spam löschen",
+    "Allen Spam lÃ¶schen",
     
     "Spam" =>
     "Spam",
@@ -94,16 +94,16 @@ $lang = array(
     "Ausloggen",
     
     "View Guestbook" =>
-    "Gästebuch anzeigen",
+    "GÃ¤stebuch anzeigen",
     
     "Dashboard" =>
     "Dashboard",
     
     "The comment has been deleted." =>
-    "Der Kommetar wurde gelöscht",
+    "Der Kommetar wurde gelÃ¶scht",
     
     "All spam comments have been deleted." =>
-    "Alle Spam Kommentare wurden gelöscht.",
+    "Alle Spam Kommentare wurden gelÃ¶scht.",
     
     "No comments to load." =>
     "Keine Kommetare zum ladne.",
@@ -118,7 +118,7 @@ $lang = array(
     "Kein Spam",
     
     "Delete" =>
-    "Löschen",
+    "LÃ¶schen",
     
     "First" =>
     "erste",
@@ -127,7 +127,7 @@ $lang = array(
     "vorherig",
     
     "Next" =>
-    "nächste",
+    "nÃ¤chste",
     
     "Last" =>
     "letzte"
