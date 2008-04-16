@@ -28,6 +28,10 @@ else $ajax = false;
 unset($data['_ajax']);
 
 foreach ($data as $key => &$datem){ // clean input
+    if (!($key == 'name' || $key == 'website' || $key == 'comment' || $key == 'jbemail')) {
+        unset($data[$key]);
+        continue;
+    }
     if (get_magic_quotes_gpc()) {
         $datem = stripslashes($datem);
     }
