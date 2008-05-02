@@ -2,21 +2,18 @@
 JibberBook v2.1
 (c) 2008 Chris Jaure
 license: MIT License
-website: http://www.chromasynthetic.com/
+website: http://www.jibberbook.com/
 -----------------------------------------------------------
 
 REQUIREMENTS:
 
-- Web Server
 - PHP5
 
 INSTALLATION:
 
-1. Download and unzip files from: 
-
-  http://www.chromasynthetic.com/scripts/jibberbook/jibberbookv2.zip
+1. Unpack files.
   
-2. Open jibberbook/inc/config.php and on line 19, change 'password' to a password of your choice.
+2. Open jibberbook/inc/config.php and on line 22, change 'password' to a password of your choice.
 
 3. Upload the files to your web server.
 

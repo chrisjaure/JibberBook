@@ -1,3 +1,4 @@
+[05-01-08] - Added new Digg-style theme
 [04-06-08] - Added rss feed in feed/index.php
 [04-05-08] - Added email notification
 [03-22-08] - Added basic emoticon support

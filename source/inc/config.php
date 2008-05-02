@@ -3,7 +3,7 @@
 //	JibberBook v2.1
 //	(c) 2008 Chris Jaure
 //	license: MIT License
-//	website: http://www.chromasynthetic.com/
+//	website: http://www.jibberbook.com/
 //
 //	inc/config.php
 //-------------------------------------------------------------------------------------
@@ -13,7 +13,7 @@ define('JB_XML_FILENAME', 'comments.xml');
 define('JB_INDEX', 'index.php');
 define('JB_SHOW', 20);
 define('JB_DATE_FORMAT', 'F j, Y - H:i:s');
-define('JB_THEME', 'digg');
+define('JB_THEME', 'default');
 //define('JB_LANGUAGE', 'en');
 define('JB_EMOTICONS', 'emoticons/');
 define('JB_EMAIL', false);

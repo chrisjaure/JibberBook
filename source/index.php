@@ -3,7 +3,7 @@
 //	JibberBook v2.1
 //	(c) 2008 Chris Jaure
 //	license: MIT License
-//	website: http://www.chromasynthetic.com/
+//	website: http://www.jibberbook.com/
 //
 //	index.php
 //-------------------------------------------------------------------------------------
@@ -64,7 +64,7 @@ includes(array('actions/loadcomments.php', 'actions/transformxml.php'));
             </div>
             <div id="footer">
                 <p>
-                    <strong>Jibber</strong>Book created by <a href="http://www.chromasynthetic.com/blog/">chromaSYNTHETIC</a>
+                    <strong>Jibber</strong>Book created by <a href="http:http://www.jibberbook.com/">chromaSYNTHETIC</a>
                     | Powered by <a href="http://mootools.net/">MooTools</a>, <a href="http://htmlpurifier.org/">HTML Purifier</a>, and <a href="http://akismet.com/">Akismet</a>
                 </p>
             </div>

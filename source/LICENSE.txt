@@ -1,6 +1,6 @@
 The MIT License
 
-Copyright (c) 2008 Chris Jaure, <http://www.chromasynthetic.com/>
+Copyright (c) 2008 Chris Jaure, <http://www.jibberbook.com/>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -23,4 +23,4 @@ THE SOFTWARE.
 -----------------------------------------------------------------------------
 
 If you use this software commercially, please consider donating
-with PayPal to ckeuler@gmail.com
+via PayPal to ckeuler@gmail.com
