@@ -45,6 +45,9 @@ body {
 #header h1 span {
     font-size: 1.5em;
     color: #099;
+    line-height:1.5em;
+    position:relative;
+    top:-0.4em;
 }
 
 #nav {

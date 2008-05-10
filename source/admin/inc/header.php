@@ -55,7 +55,5 @@ header('Content-type: text/html; charset=utf-8');
             </div>
             <div id="content">
                 <div id="message" class="<?php echo $_SESSION['message_type']; ?>">
-                    <p>
-                        <?php echo $_SESSION['message']; ?>
-                    </p>
+                    <p><?php echo $_SESSION['message']; ?></p>
                 </div>
