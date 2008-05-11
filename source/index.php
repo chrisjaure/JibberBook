@@ -64,7 +64,7 @@ includes(array('actions/loadcomments.php', 'actions/transformxml.php'));
             </div>
             <div id="footer">
                 <p>
-                    <strong>Jibber</strong>Book created by <a href="http://www.jibberbook.com/">chromasynthetic</a>
+                    <strong>Jibber</strong>Book created by <a href="http://www.chromasynthetic.com/blog/">chromasynthetic</a>
                     | Powered by <a href="http://mootools.net/">MooTools</a>, <a href="http://htmlpurifier.org/">HTML Purifier</a>, and <a href="http://akismet.com/">Akismet</a>
                 </p>
             </div>
