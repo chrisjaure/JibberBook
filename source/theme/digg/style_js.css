@@ -9,4 +9,5 @@
 #jb_message {
   position:absolute;
   width:300px;
+  z-index:999;
 }
