@@ -1,5 +1,5 @@
 -----------------------------------------------------------
-JibberBook v2.1
+JibberBook v2.1.1
 (c) 2008 Chris Jaure
 license: MIT License
 website: http://www.jibberbook.com/
