@@ -105,7 +105,7 @@ class Comments {
     $id = $this->generateID();
     $message->addAttribute('mID', $id);
     foreach ($data as $key => $value) {
-      $message->addChild($key, $value);
+      $message->addChild($key, htmlspecialchars($value, ENT_QUOTES));
     }
     $this->putContents($xml->asXML());
     
