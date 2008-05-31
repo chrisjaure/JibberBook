@@ -16,8 +16,8 @@ class Comments extends DataLayer {
     Sets the filename, gets a file resource handle, and locks the XML file.
   */
   public function __construct() {
-    $this->filename = realpath(dirname(__FILE__) . '/../../xml/' . JB_XML_FILENAME);
-    $this->handle = @fopen($this->filename, 'r+') or die('Could not open file to read. Make sure your server has correct permissions.');
+    $this->filename = realpath(dirname(__FILE__) . '/' . JB_XML_FILENAME);
+    $this->handle = @fopen($this->filename, 'r+') or die('<p><strong>Error:</strong> Could not open XML file. Make sure your server has correct permissions.</p>');
     flock($this->handle, LOCK_EX);
   }
   
