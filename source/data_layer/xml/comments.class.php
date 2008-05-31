@@ -6,7 +6,7 @@
   
   This instance supports XML.
 */
-class Comments {
+class Comments extends DataLayer {
   private $filename;
   private $handle;
 
@@ -16,14 +16,14 @@ class Comments {
     Sets the filename, gets a file resource handle, and locks the XML file.
   */
   public function __construct() {
-    $this->filename = realpath(dirname(__FILE__) . '/../xml/' . JB_XML_FILENAME);
-    $this->handle = @fopen($this->filename, 'r+') or die('Could not open file to read.');
+    $this->filename = realpath(dirname(__FILE__) . '/../../xml/' . JB_XML_FILENAME);
+    $this->handle = @fopen($this->filename, 'r+') or die('Could not open file to read. Make sure your server has correct permissions.');
     flock($this->handle, LOCK_EX);
   }
   
   public function __destruct() {
-    flock($this->handle, LOCK_UN);
-    fclose($this->handle);
+    @flock($this->handle, LOCK_UN);
+    @fclose($this->handle);
   }
   /*
     Function: getContents
@@ -139,18 +139,6 @@ class Comments {
   }
   
   /*
-    Function: getHamCount
-    
-    Gets the number of ham comments.
-    
-    Returns:
-      Number
-  */
-  public function getHamCount() {
-    return $this->getCount(0);
-  }
-  
-  /*
     Function: getCount
     
     Gets the number of the specified type of comments.
@@ -164,36 +152,6 @@ class Comments {
   public function getCount($filter) {
     $xml = new SimpleXMLElement($this->getContents());
     return count($xml->xpath("/messages/message[spam=$filter]"));
-  }
-  
-  /*
-    Function: getHam
-    
-    Gets all ham comments.
-    
-    Parameters:
-      $offset - single value will get last [value] comments, array['upper'] and array['lower'] will get a range
-    
-    Returns:
-      Multi-dimensional array
-  */
-  public function getHam($offset = null) {
-    return $this->getComments(0, $offset);
-  }
-  
-  /*
-    Function: getSpam
-    
-    Gets all spam comments.
-    
-    Parameters:
-      $offset - single value will get last [value] comments, array['upper'] and array['lower'] will get a range
-    
-    Returns:
-      Multi-dimensional array
-  */
-  public function getSpam($offset = null) {
-    return $this->getComments(1, $offset);
   }
   
   /*
@@ -234,18 +192,6 @@ class Comments {
   }
   
   /*
-    Function: generateID
-    
-    Generates a unique id.
-    
-    Returns:
-      String
-  */
-  private function generateID() {
-    return uniqid('m' . rand(1,5), true);
-  }
-  
-  /*
     Function: notifyAkismet
     
     Called when a comment is reclassified.
@@ -254,8 +200,8 @@ class Comments {
       $obj - comment array
       $type - new type, 'spam' or 'ham'
   */
-  private function notifyAkismet($obj, $type) {
-    require_once(realpath(dirname(__FILE__) . '/../microakismet/class.microakismet.inc.php'));
+  protected function notifyAkismet($obj, $type) {
+    require_once(realpath(dirname(__FILE__) . '/../../microakismet/class.microakismet.inc.php'));
     if (JB_AKISMET_KEY != '') {
       if ((string) $obj->user_ip != '' && (string) $obj->user_agent != '') {
       

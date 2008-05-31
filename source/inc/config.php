@@ -9,7 +9,7 @@
 //-------------------------------------------------------------------------------------
 
 // misc settings
-define('JB_XML_FILENAME', 'comments.xml');
+define('JB_STORAGE', 'mysql');
 define('JB_INDEX', 'index.php');
 define('JB_SHOW', 20);
 define('JB_DATE_FORMAT', 'F j, Y - H:i:s');
@@ -17,6 +17,16 @@ define('JB_THEME', 'default');
 //define('JB_LANGUAGE', 'en');
 define('JB_EMOTICONS', 'emoticons/');
 define('JB_EMAIL', false);
+
+// XML settings
+define('JB_XML_FILENAME', 'comments.xml');
+
+// MySQL settings
+define('JB_MYSQL_HOST', 'localhost');
+define('JB_MYSQL_USERNAME', 'root');
+define('JB_MYSQL_PASSWORD', '');
+define('JB_MYSQL_DATABASE', 'jibberbook');
+define('JB_MYSQL_TABLE', 'comments');
 
 // password for admin area
 define('JB_PASSWORD', 'password');

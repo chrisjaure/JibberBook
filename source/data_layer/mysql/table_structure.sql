@@ -1,5 +1,3 @@
--- Table structure for table `jb_comments`
-
 CREATE TABLE `jb_comments` (
   `id` varchar(30) collate latin1_general_ci NOT NULL,
   `name` varchar(50) collate latin1_general_ci NOT NULL,

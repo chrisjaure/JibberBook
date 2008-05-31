@@ -16,7 +16,8 @@ require_once($dir . 'inc/functions.php');
 if (defined('JB_LANGUAGE')) {
     require_once($dir . 'localization/' . JB_LANGUAGE . '.php');
 }
-require_once($dir . 'inc/comments.php');
+require_once($dir . 'data_layer/datalayer.class.php');
+require_once($dir . 'data_layer/' . JB_STORAGE . '/comments.class.php');
 
 function includes($files) {
     global $dir;
