@@ -20,7 +20,7 @@ includes(array('actions/loadcomments.php', 'actions/transformxml.php'));
         <title>JibberBook - Free AJAX Guestbook</title>
         <link rel="stylesheet" type="text/css" href="theme/<?php echo JB_THEME ?>/style.css"/>
         <link rel="alternate" type="application/rss+xml" title="RSS" href="feed/" />
-        <script type="text/javascript" src="inc/mootools.v1.11.js">
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/mootools/1.11/mootools-yui-compressed.js">
         </script>
         <script type="text/javascript" src="inc/jbscript.js">
         </script>

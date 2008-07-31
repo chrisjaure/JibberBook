@@ -14,7 +14,7 @@ header('Content-type: text/html; charset=utf-8');
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
     <head>
         <title>JibberBook <?php _e('Dashboard'); ?></title>
-        <script type="text/javascript" src="../inc/mootools.v1.11.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/mootools/1.11/mootools-yui-compressed.js"></script>
         <script type="text/javascript" src="inc/jbascript.js"></script>
         <script type="text/javascript">
             var lang = {
