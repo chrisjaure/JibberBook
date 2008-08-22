@@ -1,7 +1,7 @@
 <?php
 $lang = array(
     "An error has occurred." =>
-    "Er heeft zich een fout voorgedaan",
+    "Er is een fout opgetreden.",
     
     "All comments have been loaded." =>
     "Alle reacties zijn geladen.",
@@ -13,7 +13,7 @@ $lang = array(
     "Uw reactie kon niet worden toegevoegd. Probeert u het later nog eens.",
     
     "More comments are loading. If you are using the scrollbar, please release your mouse." =>
-    "Meer reacties worden geladen. Als u de scollbar gebruikt, laat u alstublieft uw muis los.",
+    "Meer reacties worden geladen. Als u de scollbar gebruikt, laat dan alstublieft uw muis los.",
     
     "Your comment has been added." =>
     "Uw reactie is toegevoegd.",
@@ -28,7 +28,7 @@ $lang = array(
     "De URL van de website is niet geldig.",
     
     "Name and Comment fields are required." =>
-    "Naam en Reactie velden zijn benodigd.",
+    "Naam en reactie zijn verplicht.",
     
     "This comment has been flagged as spam and has been added to the moderation queue." =>
     "Deze reactie is aangemerkt als spam en wordt aan de moderatie wachtrij toegevoegd.",
@@ -43,13 +43,13 @@ $lang = array(
     "Website",
     
     "required" =>
-    "benodigd",
+    "verplicht",
     
     "Add Comment" =>
     "Reactie toevoegen",
     
     "Do not fill out this field." =>
-    "Vult u dit veld niet in.",
+    "Vul dit veld niet in.",
     
     "Only the most recent comments are showing. You need JavaScript to view them all." =>
     "Alleen de meest recente reacties worden getoond. U heeft JavaScript nodig om ze te kunnen zien.",
@@ -64,7 +64,7 @@ $lang = array(
     "Inloggen",
     
     "Password" =>
-    "Paswoord",
+    "Wachtwoord.",
     
     "All Ham" =>
     "Alle Reacties",
@@ -109,7 +109,7 @@ $lang = array(
     "Geen reactie om te laden.",
     
     "Incorrect password." =>
-    "Incorrect paswoord.",
+    "Incorrect wachtwoord.",
     
     "The comment has been reclassified." =>
     "Deze reactie is opnieuw gerangschikt.",
