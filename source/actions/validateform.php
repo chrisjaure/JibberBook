@@ -53,8 +53,9 @@ function validateForm(&$formData){
                 $errornum = '5';
                 $errordesc = __('Your comment was not added because you are a suspected spammer.');
             }
-        } elseif ($_SESSION['time'] + 10 > time()) {
-            $formData['spam'] = 1;
+        } elseif ($_SESSION['time'] + 20 > time()) {
+            $errornum = '5';
+            $errordesc = __('Please wait a bit before adding another comment.');
         }
     }
     

@@ -35,6 +35,9 @@ $lang = array(
     "This comment has been flagged as spam and has been added to the moderation queue." =>
     "",
     
+    "Please wait a bit before adding another comment." =>
+    "",
+    
     "Your comment was not added because you are a suspected spammer." =>
     "",
     
