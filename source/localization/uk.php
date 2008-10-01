@@ -1,4 +1,6 @@
 <?php
+// Українська
+
 $lang = array(
     "An error has occurred." =>
     "Виникла помилка.",

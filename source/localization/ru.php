@@ -1,4 +1,6 @@
 <?php
+// русский язык
+
 $lang = array(
     "An error has occurred." =>
     "Произошла ошибка.",

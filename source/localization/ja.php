@@ -1,4 +1,6 @@
 <?php
+// 日本語
+
 $lang = array(
     "An error has occurred." =>
     "エラーが発生しました。",

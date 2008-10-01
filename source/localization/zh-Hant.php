@@ -1,135 +1,137 @@
 <?php
+// 繁體字
+
 $lang = array(
     "An error has occurred." =>
-    "Stala se chyba.",
+    "遇到一个错误.",
     
     "All comments have been loaded." =>
-    "Všechny příspěvky jsou zobrazeny.",
+    "评论加载完毕.",
     
     "Loading..." =>
-    "Zpracovávám...",
+    "加载中...",
     
     "Your comment could not be added. Please try again later." =>
-    "Bohužel, někde se stala chyba, zkuste přidat příspěvěk později.",
+    "你的评论暂时不能被添加，请稍后再试.",
     
     "More comments are loading. If you are using the scrollbar, please release your mouse." =>
-    "Většina příspěvků je zobrazena. Pokud skrolujete na stránce, prosím pusťte myš.",
+    "更多的评论正在被加载. 如果你正在使用滚动条, 请释放鼠标.",
     
     "Your comment has been added." =>
-    "Váš příspěvek byl přidán, děkuji.",
+    "你的评论已被添加.",
     
     "writes..." =>
-    "napsal:",
+    "撰写中...",
     
     "Posted on" =>
-    "Napsáno",
+    "发布由",
     
     "Website is not a valid URL." =>
-    "Chybně napsaná www adresa.",
+    "网站网址错误.",
     
     "Name and Comment fields are required." =>
-    "Je potřeba vyplnit minimálně položky Jméno a Vzkaz.",
+    "姓名与评论为必填区域.",
     
     "This comment has been flagged as spam and has been added to the moderation queue." =>
-    "Tvůj příspěvek byl označen za SPAM. Pokud tomu tak není, já to brzy zjistím a tvůj příspěvek se zobrazí.",
+    "这条评论被标记为垃圾评论 , 并被添加到审核队列.",
     
     "Comment" =>
-    "Vzkaz",
+    "评论",
     
     "Name" =>
-    "Jméno",
+    "姓名",
     
     "Website" =>
-    "Web",
+    "网站",
     
     "required" =>
-    "povinné",
+    "必填",
     
     "Add Comment" =>
-    " ",
+    "添加评论",
     
     "Do not fill out this field." =>
-    "Toto pole prosím nevyplňuj.",
+    "不要填写这个区域.",
     
     "Only the most recent comments are showing. You need JavaScript to view them all." =>
-    "Zobrazují se pouze poslední příspěvky. Potřebuješ mít nainstalovaný JavaScript, aby si viděl všechny.",
+    "只有最近的评论被显示. 你需要 JavaScript 去浏览全部评论.",
     
     "Add it!" =>
-    "Odeslat",
+    "添加它!",
     
     "Comments" =>
-    "Příspěvky",
+    "评论",
     
     "Log In" =>
-    "Přihlásit se",
+    "登录",
     
     "Password" =>
-    "Heslo",
+    "密码",
     
     "All Ham" =>
-    "Všechny příspěvky",
+    "所有的 Ham",
     
     "All Spam" =>
-    "Všechny SPAMy",
+    "所有的垃圾评论",
     
-    "Recent Ham" =>
-    "Poslední příspěvek",
+    "最近的 Ham" =>
+    "",
     
     "Recent Spam" =>
-    "Poslední SPAM",
+    "最近的垃圾评论",
     
     "Delete All Spam" =>
-    "Vymaž všechny SPAMy",
+    "删除所有的垃圾评论",
     
     "Spam" =>
-    "SPAM",
+    "垃圾评论",
     
     "Ham" =>
-    "Příspěvky",
+    "Ham",
     
     "Recent" =>
-    "Poslední",
+    "最近的",
     
     "Logout" =>
-    "Odhlásit se",
+    "登出",
     
     "View Guestbook" =>
-    "Koukni na guestbook",
+    "访问留言本",
     
     "Dashboard" =>
-    "Vzkazy na webu",
+    "控制面板",
     
     "The comment has been deleted." =>
-    "Příspěvek byl smazán.",
+    "该评论被删除.",
     
     "All spam comments have been deleted." =>
-    "Všechny SPAMy byly smazány.",
+    "所有的垃圾评论已被删除.",
     
     "No comments to load." =>
-    "V databázi není žádný příspěvek.",
+    "没有评论被加载.",
     
     "Incorrect password." =>
-    "Špatné heslo.",
+    "密码错误.",
     
     "The comment has been reclassified." =>
-    "Příspěvek byl překvalifikován.",
+    "该评论已被重新分类.",
     
     "Not Spam" =>
-    "Není SPAM",
+    "不是垃圾评论",
     
     "Delete" =>
-    "Vymazat",
+    "删除",
     
     "First" =>
-    "První",
+    "第一页",
     
     "Previous" =>
-    "Předchozí",
+    "上一页",
     
     "Next" =>
-    "Další",
+    "下一页",
     
     "Last" =>
-    "Poslední"
+    "末页"
 );
 ?>

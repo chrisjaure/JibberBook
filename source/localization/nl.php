@@ -1,4 +1,6 @@
 <?php
+// Nederlands
+
 $lang = array(
     "An error has occurred." =>
     "Er is een fout opgetreden.",

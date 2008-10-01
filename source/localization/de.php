@@ -1,4 +1,6 @@
 <?php
+// Deutsch
+
 $lang = array(
     "An error has occurred." =>
     "es ist ein Fehler aufgetreten.",

@@ -1,46 +1,48 @@
 <?php
+// 繁体字
+
 $lang = array(
     "An error has occurred." =>
-    "遇到一个错误.",
+    "有错误发生",
     
     "All comments have been loaded." =>
-    "评论加载完毕.",
+    "所有评论读取完毕",
     
     "Loading..." =>
-    "加载中...",
+    "读取中…",
     
     "Your comment could not be added. Please try again later." =>
-    "你的评论暂时不能被添加，请稍后再试.",
+    "无法添加您的评论。请稍候再试。",
     
     "More comments are loading. If you are using the scrollbar, please release your mouse." =>
-    "更多的评论正在被加载. 如果你正在使用滚动条, 请释放鼠标.",
+    "读取更多评论。如果正在使用滚动条，请松开鼠标。",
     
     "Your comment has been added." =>
-    "你的评论已被添加.",
+    "您的评论已添加。",
     
     "writes..." =>
-    "撰写中...",
+    "说…",
     
     "Posted on" =>
-    "发布由",
+    "发表于",
     
     "Website is not a valid URL." =>
-    "网站网址错误.",
+    "网址无效",
     
     "Name and Comment fields are required." =>
-    "姓名与评论为必填区域.",
+    "名称和评论文本框必填",
     
     "This comment has been flagged as spam and has been added to the moderation queue." =>
-    "这条评论被标记为垃圾评论 , 并被添加到审核队列.",
+    "此条评论被标记为垃圾留言并已添加到审批队列。",
     
     "Comment" =>
     "评论",
     
     "Name" =>
-    "姓名",
+    "名称",
     
     "Website" =>
-    "网站",
+    "网址",
     
     "required" =>
     "必填",
@@ -49,85 +51,85 @@ $lang = array(
     "添加评论",
     
     "Do not fill out this field." =>
-    "不要填写这个区域.",
+    "此处请不要填写。",
     
     "Only the most recent comments are showing. You need JavaScript to view them all." =>
-    "只有最近的评论被显示. 你需要 JavaScript 去浏览全部评论.",
+    "仅显示最近留言。需要JavaScript才能全部显示。",
     
     "Add it!" =>
-    "添加它!",
+    "提交！",
     
     "Comments" =>
     "评论",
     
     "Log In" =>
-    "登录",
+    "登陆",
     
     "Password" =>
     "密码",
     
     "All Ham" =>
-    "所有的 Ham",
+    "所有评论",
     
     "All Spam" =>
-    "所有的垃圾评论",
+    "垃圾评论",
     
-    "最近的 Ham" =>
-    "",
+    "Recent Ham" =>
+    "最近评论",
     
     "Recent Spam" =>
-    "最近的垃圾评论",
+    "最近垃圾评论",
     
     "Delete All Spam" =>
-    "删除所有的垃圾评论",
+    "清空所有垃圾评论",
     
     "Spam" =>
     "垃圾评论",
     
     "Ham" =>
-    "Ham",
+    "评论",
     
     "Recent" =>
     "最近的",
     
     "Logout" =>
-    "登出",
+    "注销",
     
     "View Guestbook" =>
-    "访问留言本",
+    "查看留言本",
     
     "Dashboard" =>
     "控制面板",
     
     "The comment has been deleted." =>
-    "该评论被删除.",
+    "评论已删除。",
     
     "All spam comments have been deleted." =>
-    "所有的垃圾评论已被删除.",
+    "所有垃圾评论已被删除。",
     
     "No comments to load." =>
-    "没有评论被加载.",
+    "没有评论需读取。",
     
     "Incorrect password." =>
-    "密码错误.",
+    "密码错误",
     
     "The comment has been reclassified." =>
-    "该评论已被重新分类.",
+    "此评论已被重新分类。",
     
     "Not Spam" =>
-    "不是垃圾评论",
+    "不是垃圾",
     
     "Delete" =>
     "删除",
     
     "First" =>
-    "第一页",
+    "首页",
     
     "Previous" =>
-    "上一页",
+    "前一页",
     
     "Next" =>
-    "下一页",
+    "后一页",
     
     "Last" =>
     "末页"

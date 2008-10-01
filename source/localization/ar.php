@@ -1,4 +1,6 @@
 <?php
+// العربية
+
 $lang = array(
     "An error has occurred." =>
     "فشل إتمام الإضافة.",
