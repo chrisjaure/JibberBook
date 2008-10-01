@@ -46,10 +46,16 @@ function validateForm(&$formData){
         
         $formData['spam'] = ($akismet->check($vars)) ? 1 : 0;
     }
-    if ($formData['spam']) {
-        $value = '2';
-        $message = __('This comment has been flagged as spam and has been added to the moderation queue.');
-        return;
+    
+    if (isset($_SESSION['time']) && !isset($errornum)) {
+        if ($formData['spam']) {
+            if ($_SESSION['time'] + 60 > time()) {
+                $errornum = '5';
+                $errordesc = __('Your comment was not added because you are a suspected spammer.');
+            }
+        } elseif ($_SESSION['time'] + 10 > time()) {
+            $formData['spam'] = 1;
+        }
     }
     
     // if there's an error, return json object or set session vars, and then stop further actions
@@ -65,6 +71,11 @@ function validateForm(&$formData){
             header($url);
         }
         exit(1);
+    }
+    
+    if ($formData['spam']) {
+        $value = '2';
+        $message = __('This comment has been flagged as spam and has been added to the moderation queue.');
     }
 }
 ?>

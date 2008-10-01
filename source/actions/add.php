@@ -74,13 +74,17 @@ $data['comment'] = htmlspecialchars($data['comment'], ENT_QUOTES);
 
 $storage = new Comments();
 $data['id'] = $storage->addComment($data);
+$_SESSION['time'] = time();
 
 if (JB_EMAIL && !$data['spam']) {
     $to = JB_EMAIL;
     $subject = "JibberBook comment from {$data['name']}!";
     $comment = wordwrap($data['comment'], 70);
     $headers = 'From: noreply@jibberbook.com';
-    mail($to, $subject, $comment, $headers);
+    $find = "/(content-type|bcc:|cc:|to:)/i";
+    if (!preg_match($find, $from) && !preg_match($find, $message)) {
+        mail($to, $subject, $comment, $headers);
+    }
 }
 
 if ($ajax) {
