@@ -201,7 +201,6 @@ class Comments extends DataLayer {
       $type - new type, 'spam' or 'ham'
   */
   protected function notifyAkismet($obj, $type) {
-    require_once(realpath(dirname(__FILE__) . '/../../microakismet/class.microakismet.inc.php'));
     if (JB_AKISMET_KEY != '') {
       if ((string) $obj->user_ip != '' && (string) $obj->user_agent != '') {
       

@@ -10,7 +10,7 @@
 
 require_once('../inc/secure.php');
 require_once('../../inc/includes.php');
-includes(array('microakismet/class.microakismet.inc.php'));
+includes(array('libraries/microakismet/class.microakismet.inc.php'));
 
 $id = $_GET['id'];
 $storage = new Comments();

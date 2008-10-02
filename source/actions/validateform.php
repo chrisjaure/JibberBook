@@ -31,7 +31,7 @@ function validateForm(&$formData){
     unset($formData['jbemail']);
     
     if (JB_AKISMET_KEY != '' && !$formData['spam']) {
-        require_once('../microakismet/class.microakismet.inc.php');
+        require_once('../libraries/microakismet/class.microakismet.inc.php');
         $vars = array();
         // required
         $vars['user_ip'] = $formData['user_ip'];

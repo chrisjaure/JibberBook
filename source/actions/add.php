@@ -54,7 +54,7 @@ validateForm($data);
 
 if (JB_ENABLE_HTML_PURIFIER) {
     //HTMLPurifier filtering
-    include("../htmlpurifier/HTMLPurifier.standalone.php");
+    include("../libraries/htmlpurifier/HTMLPurifier.standalone.php");
     
     $config = HTMLPurifier_Config::createDefault();
     $config->set('Core', 'Encoding', JB_ENCODING);
