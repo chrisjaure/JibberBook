@@ -20,7 +20,7 @@ INSTALLATION:
 
 4. Make sure your server has permission to write to /xml/comments.xml
 
-If you plan on using HTML Purifier, your server MUST have permission to write to /htmlpurifier/standalone/HTMLPurifier/DefinitionCache/Serializer
+If you plan on using HTML Purifier, your server MUST have permission to write to /libraries/htmlpurifier/standalone/HTMLPurifier/DefinitionCache/Serializer
 
 If you want to use a non-supported storage system, just extend /data_layer/datalayer.class.php to suit your needs.
 
