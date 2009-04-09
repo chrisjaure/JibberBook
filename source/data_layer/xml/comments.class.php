@@ -48,8 +48,10 @@ class Comments extends DataLayer {
       $contents - string to write to the XML file.
   */
   private function putContents($contents) {
-    ftruncate($this->handle, 0);
-    fwrite($this->handle, $contents) or die('Could not write to file.');
+    if (strlen($contents) > 25) {
+      ftruncate($this->handle, 0);
+      fwrite($this->handle, $contents) or die('Could not write to file.');
+    }
   }
   
   /*
