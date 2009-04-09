@@ -1,0 +1,154 @@
+/*-------------------------------------------------------------------------------------
+//	JibberBook v2.3
+//	(c) 2009 Chris Jaure
+//	license: MIT License
+//	website: http://www.jibberbook.com/
+//
+//	theme/default/jbstyle.css
+-------------------------------------------------------------------------------------*/
+body {
+  padding:0;
+  margin:10px 0;
+  text-align:center;
+  font-size:80%;
+  font-family:"Arial", sans-serif;
+  background-color:#fff;
+}
+h1,h2,h3,h4,h5,h6 {
+  margin:0;
+  padding:0;
+}
+#container {
+  width:700px;
+  text-align:left;
+  margin:0 auto;
+}
+#container h3 {
+	font-size:1.6em;
+	margin-bottom:10px;
+	font-family:arial, sans-serif;
+	font-weight:normal;
+	color:#fff;
+	background-color:#000;
+	text-align:center;
+}
+#header {
+	margin-bottom:5px;
+	padding:2em 0;
+}
+#header h1 {
+	text-align:center;
+	font-weight:normal;
+	font-size:3em;
+	margin-top:5px;
+	line-height:1em;
+}
+#info {
+	color:#666;
+	font-style:italic;
+	position:relative;
+	left:45%;
+	width:40%;
+}
+#jb_message {
+	color:#fff;
+	text-align:center;
+	margin-bottom:0.5em;
+}
+#jb_message.error {
+	background-color:#c00;
+}
+#jb_message.confirm {
+  background-color:#360;
+}
+#jb_message p {
+  margin:0;
+  padding:0.5em;
+  font-size:1.6em;
+}
+#primary {
+  float:right;
+}
+#secondary {
+	width:420px;
+  float:left;
+  margin-bottom:1em;
+}
+#jb_addComment{
+	width:255px;
+}
+#jb_addComment label {
+  display:block;
+  font-weight:bold;
+  font-size:0.9em;
+}
+#jb_addComment input, #jb_addComment textarea{
+	font-size:0.8em;
+	font-family:arial, sans-serif;
+	width:98%;
+	margin-bottom:5px;
+	padding-left:2px;
+}
+#jb_addComment textarea{
+	height:80px;
+}
+#jb_addComment .button{
+	font-size:1.3em;
+}
+#jb_addComment fieldset{
+  border:0;
+  margin:0;
+  padding:0;
+}
+#jb_comments{
+	height:300px;
+	overflow:auto;
+}
+.comment{
+	width:390px;
+	background:#f8f8f8;
+	border: solid 1px #ddd;
+	margin-bottom:15px;
+	overflow:hidden;
+}
+.comment .header {
+	font-weight:bold;
+	border-bottom: solid 2px #06c;
+	padding:2px 1px;
+	background:url(images/c_header_bg.gif) repeat-x top;
+}
+.comment .header a{
+	color:#000;
+}
+.comment .header a.delete{
+	float:right;
+}
+.comment .content {
+	padding:5px;
+	line-height:1.5em;
+}
+.comment .date {
+	font-size:0.8em;
+	text-align:right;
+	color:#999;
+	padding-right:4px;
+}
+#footer{
+	clear:both;
+	text-align:center;
+	padding-top:10px;
+	font-size:0.8em;
+	border-top:solid 2em #000;
+}
+#footer a{
+	color:#06c;
+}
+#footer a:hover{
+	text-decoration:none;
+}
+.required{
+	color:#f00;
+}
+#jb_addComment .hidden, .hidden{
+	display:none;
+}

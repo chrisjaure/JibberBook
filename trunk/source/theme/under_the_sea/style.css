@@ -1,0 +1,157 @@
+/*-------------------------------------------------------------------------------------
+//	JibberBook v2.3
+//	(c) 2009 Chris Jaure
+//	license: MIT License
+//	website: http://www.jibberbook.com/
+//
+//	theme/under_the_sea/jbstyle.css
+-------------------------------------------------------------------------------------*/
+body {
+  padding:0;
+  margin:10px 0;
+  text-align:center;
+  font-size:80%;
+  font-family:"Arial", sans-serif;
+  background-color:#fff;
+}
+h1,h2,h3,h4,h5,h6 {
+  margin:0;
+  padding:0;
+}
+#container {
+  width:726px;
+  text-align:left;
+  margin:0 auto;
+}
+#container h3 {
+	font-size:1.6em;
+	margin-bottom:10px;
+	font-family:arial, sans-serif;
+	font-weight:normal;
+	color:#066;
+	text-align:center;
+	border-bottom:solid 2px #0c9;
+}
+#header {
+	padding:2em 0;
+	background:url(images/header_bg.gif) no-repeat bottom;
+}
+#header h1 {
+	text-align:center;
+	font-weight:normal;
+	font-size:3em;
+	margin-top:5px;
+	line-height:1em;
+}
+#info {
+	color:#666;
+	font-style:italic;
+	position:relative;
+	left:45%;
+	width:40%;
+}
+#jb_message {
+	color:#fff;
+	text-align:center;
+	margin-bottom:0.5em;
+}
+#jb_message.error {
+	background-color:#c00;
+}
+#jb_message.confirm {
+  background-color:#360;
+}
+#jb_message p {
+  margin:0;
+  padding:0.5em;
+  font-size:1.6em;
+}
+#content {
+  background:url(images/content_bg.gif) repeat-y;
+}
+#primary {
+  float:right;
+	width:280px;
+	padding:10px;
+}
+#secondary {
+	width:400px;
+  float:left;
+  margin-bottom:1em;
+  padding:10px;
+}
+#jb_addComment{
+	width:270px;
+}
+#jb_addComment label {
+  display:block;
+  font-weight:bold;
+  font-size:0.9em;
+}
+#jb_addComment input, #jb_addComment textarea{
+	font-size:0.8em;
+	font-family:arial, sans-serif;
+	width:98%;
+	margin-bottom:5px;
+	padding-left:2px;
+}
+#jb_addComment textarea{
+	height:80px;
+}
+#jb_addComment .button{
+	font-size:1.3em;
+}
+#jb_addComment fieldset{
+  border:0;
+  margin:0;
+  padding:0;
+}
+#jb_comments{
+	height:300px;
+	overflow:auto;
+}
+.comment{
+	width:370px;
+	margin-bottom:15px;
+	overflow:hidden;
+	background-color:#fff;
+	border:solid 1px #0c9;
+}
+.comment .header {
+	font-weight:bold;
+	background:#0c9 url(images/c_header_bg.gif) repeat-x bottom;
+	padding:2px 1px;
+	color:#fff;
+}
+.comment .header a{
+	color:#fff;
+}
+.comment .content {
+	padding:5px;
+	line-height:1.5em;
+}
+.comment .date {
+	font-size:0.8em;
+	text-align:right;
+	color:#73D500;
+	padding-right:4px;
+}
+#footer{
+	clear:both;
+	text-align:center;
+	padding-top:10px;
+	font-size:0.8em;
+	background:url(images/footer_bg.gif) no-repeat top;
+}
+#footer a{
+	color:#06c;
+}
+#footer a:hover{
+	text-decoration:none;
+}
+.required{
+	color:#c00;
+}
+#jb_addComment .hidden, .hidden{
+	display:none;
+}

@@ -1,0 +1,202 @@
+/*-------------------------------------------------------------------------------------
+ //	JibberBook v2.3
+ //	(c) 2009 Chris Jaure
+ //	license: MIT License
+ //	website: http://www.jibberbook.com/
+ //
+ //	theme/digg/jbstyle.css
+ -------------------------------------------------------------------------------------*/
+body {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-size: 80%;
+    font-family: "Arial", sans-serif;
+    background-color: #E5ECF3;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    width: 490px;
+    text-align: left;
+    margin: 0 auto;
+}
+
+#primary h3 {
+    font-size: 1.6em;
+    font-family: arial, sans-serif;
+    font-weight: normal;
+    text-align: center;
+    color: #fff;
+    padding: 0.3em 0;
+    background: #A5CC7B url(images/h3_bg.gif) no-repeat top left;
+    width: 177px;
+}
+
+#secondary h3 {
+    font-size: 1.8em;
+    text-align: center;
+    color: #4E463F;
+    font-weight: normal;
+    letter-spacing: -1px;
+    font-family: arial, helvetica, sans-serif;
+}
+
+#header {
+    padding: 1em 0;
+    color: #fff;
+    background: #1B5790 url(images/header_bg.gif) no-repeat bottom;
+}
+
+#header h1 {
+    text-align: center;
+    font-weight: normal;
+    font-size: 3em;
+    line-height: 1em;
+}
+
+#info {
+    color: #D2DCF3;
+    font-style: italic;
+    position: relative;
+    left: 45%;
+    width: 40%;
+}
+
+#jb_message {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+
+#jb_message.error {
+    background-color: #c00;
+}
+
+#jb_message.confirm {
+    background-color: #360;
+}
+
+#jb_message p {
+    margin: 0;
+    padding: 0.5em;
+    font-size: 1.6em;
+}
+
+#content {
+    background:#fff url(images/content_bg.gif) no-repeat top;
+    margin-top:2em;
+    
+}
+
+#primary {
+    padding: 10px;
+    margin:0 0 1em;
+}
+
+#secondary {
+    padding: 10px;
+    margin-top:10px;
+    background-color:#fff;
+}
+
+#jb_addComment label {
+    display: block;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+#jb_addComment input, #jb_addComment textarea {
+    font-size: 0.8em;
+    font-family: arial, sans-serif;
+    margin-bottom: 5px;
+    padding-left: 2px;
+    width: 50%;
+}
+
+#jb_addComment textarea {
+    height: 80px;
+    width: 98%;
+}
+
+#jb_addComment .button {
+    font-size: 1.3em;
+}
+
+#jb_addComment fieldset {
+    border:0;
+    border-top: solid 5px #A5CC7B;
+    margin: 0;
+    padding: 1em;
+    background-color: #E6F3D9;
+}
+
+.comment {
+    overflow: hidden;
+    margin-bottom: 10px;
+    position:relative;
+}
+
+.comment .header {
+    padding: 5px;
+    color: #52718B;
+    background-color:#EAF0F5;
+    border-top:solid 1px #C0C7CD;
+}
+
+.comment .header a {
+    font-weight: bold;
+    color: #52718B;
+}
+
+.comment .content {
+    padding: 5px;
+    line-height: 1.5em;
+    color: #393733;
+}
+
+.comment .content a {
+    color: #666;
+}
+
+.comment .content a:hover {
+    color:#333;
+}
+
+.comment .date {
+    font-size: 0.8em;
+    color: #52718B;
+    position:absolute;
+    top:6px;
+    right:12px;
+}
+
+#footer {
+    clear: both;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 0.8em;
+    color:#999;
+    background:url(images/footer_bg.gif) no-repeat top;
+}
+
+#footer a {
+    color: #999;
+}
+
+#footer a:hover {
+    text-decoration: none;
+    color:#000;
+}
+
+.required {
+    color: #325B0A;
+}
+
+#jb_addComment .hidden, .hidden {
+    display: none;
+}

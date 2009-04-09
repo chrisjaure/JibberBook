@@ -1,0 +1,13 @@
+/*-------------------------------------------------------------------------------------
+//	JibberBook v2.3
+//	(c) 2009 Chris Jaure
+//	license: MIT License
+//	website: http://www.jibberbook.com/
+//
+//	theme/digg/jbstyle_js.css
+-------------------------------------------------------------------------------------*/
+#jb_message {
+  position:absolute;
+  width:300px;
+  z-index:999;
+}

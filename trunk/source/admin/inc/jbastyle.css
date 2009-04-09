@@ -1,0 +1,186 @@
+/*-------------------------------------------------------------------------------------
+ //	JibberBook v2.3
+ //	(c) 2009 Chris Jaure
+ //	license: MIT License
+ //	website: http://www.jibberbook.com/
+ //
+ //	admin/inc/jbastyle.css
+ -------------------------------------------------------------------------------------*/
+body, ul, li, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #9c3 url(../media/body_bg.gif) repeat-x top;
+    font-family: Arial, sans-serif;
+    font-size: 80%;
+    text-align: center;
+}
+
+#container {
+    text-align: left;
+    margin: 0 auto;
+    width: 604px;
+    background: #DCFF96 url(../media/content_bg.gif) repeat-y;
+}
+
+#header {
+    background: #fff url(../media/header_bg.gif) repeat-x bottom;
+    height: 90px;
+}
+
+#header h1 {
+    font-weight: normal;
+    font-size: 2em;
+    line-height: 1em;
+    padding-top: 10px;
+}
+
+#header h1 img {
+    float: left;
+    margin-right: 6px;
+}
+
+#header h1 span {
+    font-size: 1.5em;
+    color: #099;
+    line-height:1.5em;
+    position:relative;
+    top:-0.4em;
+}
+
+#nav {
+    background: url(../media/middle_bg.gif) no-repeat bottom;
+    padding: 10px 15px 50px;
+}
+
+#nav ul {
+    list-style: none;
+}
+
+#nav ul li {
+    display: inline;
+    margin: 0 30px 0 0;
+}
+
+#nav ul li a {
+    padding: 2px 3px 2px 18px;
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#nav ul li a:hover {
+    background-color: #fff;
+}
+
+#recent_link {
+    background: url(../media/star.png) no-repeat left center;
+}
+
+#ham_link {
+    background: url(../media/comment.png) no-repeat left center;
+}
+
+#spam_link {
+    background: url(../media/comment_delete.png) no-repeat left center;
+}
+
+#logout_link {
+    background: url(../media/cancel.png) no-repeat left center;
+}
+
+#content {
+    background: url(../media/bottom_bg.gif) no-repeat bottom;
+    padding: 5px 30px 30px;
+}
+
+h2 {
+    font-size: 2em;
+    color: #099;
+    border-bottom: solid 2px #0cc;
+}
+
+a {
+    color: #06f;
+}
+
+.comment {
+    margin-top: 15px;
+    border-bottom: solid 1px #ccc;
+    padding-bottom: 5px;
+}
+
+.comment .content {
+    margin: 10px 0;
+}
+
+.comment .edit {
+    font-size: 0.9em;
+    color: #666;
+    background-color: #eee;
+    padding: 2px 0;
+}
+
+.comment .edit a {
+    color: #c60;
+}
+
+.comment .edit a:hover {
+    color: #099;
+}
+
+hr {
+    padding: 1em;
+    visibility: hidden;
+}
+
+form {
+    margin: 10px 0;
+}
+
+form p {
+    color: #f00;
+}
+
+.button {
+    vertical-align: -42%;
+}
+
+#message {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+
+.error {
+    background-color: #c00;
+}
+
+.confirm {
+    background-color: #360;
+}
+
+.loading {
+    background-color: #000;
+}
+
+#message p {
+    margin: 0;
+    padding: 0.5em;
+    font-size: 1.6em;
+}
+
+.result_nav {
+    text-align:center;
+    margin-top:2px;
+}
+
+.result_nav a img {
+    border:dashed 1px #fff;
+}
+
+.result_nav a:hover img {
+    border-color:#0cc;
+}
