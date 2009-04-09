@@ -1,7 +1,7 @@
 <?php
 //-------------------------------------------------------------------------------------
-//	JibberBook v2.1
-//	(c) 2008 Chris Jaure
+//	JibberBook v2.3
+//	(c) 2009 Chris Jaure
 //	license: MIT License
 //	website: http://www.jibberbook.com/
 //
@@ -19,23 +19,20 @@ unset($_SESSION['form_name']);
 unset($_SESSION['form_website']);
 unset($_SESSION['form_comment']);
 
-$data = $_POST;
+$data = array();
+$data['name'] = $_POST['name'];
+$data['website'] = $_POST['website'];
+$data['comment'] = $_POST['comment'];
+$data['jbemail'] = $_POST['jbemail'];
 
-if ($data['_ajax'] == 'true'){
-	$ajax = true;
-}
-else $ajax = false;
-unset($data['_ajax']);
+$ajax = ($_POST['_ajax'] == 'true');
 
 foreach ($data as $key => &$datem){ // clean input
-    if (!($key == 'name' || $key == 'website' || $key == 'comment' || $key == 'jbemail')) {
-        unset($data[$key]);
-        continue;
-    }
     if (get_magic_quotes_gpc()) {
         $datem = stripslashes($datem);
     }
     $datem = trim($datem);
+    $datem = iconv("UTF-8", "UTF-8//IGNORE", $datem);
     if ($key != 'comment') {
         $datem = strip_tags($datem);
         $datem = htmlspecialchars($datem, ENT_QUOTES); 
@@ -51,6 +48,12 @@ require_once("validateform.php");
 $message = __('Your comment has been added.');
 $value = '1';
 validateForm($data);
+
+if (JB_CHAR_LIMIT) {
+    if (strlen($data['comment']) > JB_CHAR_LIMIT) {
+        $data['comment'] = substr($data['comment'], 0, JB_CHAR_LIMIT) . '...';
+    }
+}
 
 if (JB_ENABLE_HTML_PURIFIER) {
     //HTMLPurifier filtering

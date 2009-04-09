@@ -1,7 +1,7 @@
 <?php
 //-------------------------------------------------------------------------------------
-//	JibberBook v2.1
-//	(c) 2008 Chris Jaure
+//	JibberBook v2.3
+//	(c) 2009 Chris Jaure
 //	license: MIT License
 //	website: http://www.jibberbook.com/
 //
@@ -57,6 +57,11 @@ function validateForm(&$formData){
             $errornum = '5';
             $errordesc = __('Please wait a bit before adding another comment.');
         }
+    }
+    
+    if (!JB_KEEP_SPAM && $formData['spam']) {
+      $errornum = '6';
+      $errordesc = __('Your comment was discarded because it was flagged as spam.');
     }
     
     // if there's an error, return json object or set session vars, and then stop further actions

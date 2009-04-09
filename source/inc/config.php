@@ -1,12 +1,12 @@
 <?php
-//-------------------------------------------------------------------------------------
-//	JibberBook v2.1
-//	(c) 2008 Chris Jaure
+//------------------------------------------------------------------------------
+//	JibberBook v2.3
+//	(c) 2009 Chris Jaure
 //	license: MIT License
 //	website: http://www.jibberbook.com/
 //
 //	inc/config.php
-//-------------------------------------------------------------------------------------
+//------------------------------------------------------------------------------
 
 // misc settings
 define('JB_STORAGE', 'xml');
@@ -17,6 +17,8 @@ define('JB_THEME', 'default');
 #define('JB_LANGUAGE', 'en');
 define('JB_EMOTICONS', 'emoticons/');
 define('JB_EMAIL', false);
+define('JB_KEEP_SPAM', true);
+define('JB_CHAR_LIMIT', false);
 
 // XML settings
 define('JB_XML_FILENAME', 'comments.xml');
@@ -72,9 +74,9 @@ $EMOTICONS = array(
 );
 
 
-// STOP EDITING -----------------------------------------------------------------------
+// STOP EDITING ----------------------------------------------------------------
 
 // version numbers
-define('JB_VERSION', '2.1');
+define('JB_VERSION', '2.3');
 define('JB_MA_VERSION', '1.2');
 ?>

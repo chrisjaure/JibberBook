@@ -1,6 +1,6 @@
 -----------------------------------------------------------
-JibberBook v2.2
-(c) 2008 Chris Jaure
+JibberBook v2.3
+(c) 2009 Chris Jaure
 license: MIT License
 website: http://www.jibberbook.com/
 -----------------------------------------------------------
@@ -14,11 +14,11 @@ INSTALLATION:
 
 1. Unpack files.
   
-2. Open /inc/config.php and on line 22, change 'password' to a password of your choice.
+2. Open /inc/config.php and on line 33, change 'password' to a password of your choice.
 
 3. Upload the files to your web server.
 
-4. Make sure your server has permission to write to /xml/comments.xml
+4. Make sure your server has permission to write to /data_layer/xml/comments.xml
 
 If you plan on using HTML Purifier, your server MUST have permission to write to /libraries/htmlpurifier/standalone/HTMLPurifier/DefinitionCache/Serializer
 
@@ -28,32 +28,7 @@ If you want to use a non-supported storage system, just extend /data_layer/datal
 CONFIGURATION:
 
 The configuration file contains many options.
-You can change (on line number):
-
-12. Type of storage. Accepts xml or mysql.
-13. The filename of the comments page. If you rename the file, change it here.
-14. How many comments are loaded at a time. A good range is 20-50.
-15. The date format. For other date formats, go to http://php.net/manual/en/function.date.php
-16. The folder name of the theme to be used.
-17. Language pack to be used. Should be the filename of any file in /localization/ without the extension. Uncomment if you need to change it.
-18. Location of the emoticon images. Must be an absolute url. Set to false to disable emoticon replacement.
-19. Enter your email address here if you want notifications of new comments. Set to false to disable.
-
-22. If you're using xml for storage, the name of the xml file located in /data_layer/xml/
-
-25.-29. If you're using mysql for storage, the information needed to connect to the database
-
-32. The password for the admin section.
-
-35. If true, HTML Purifier will be used to filter HTML. If false, all tags will be stripped. For more information on HTML Purifier, go to http://htmlpurifier.org/
-36. The character encoding of your page. Required by HTML Purifier.
-37. The doctype of your page. Required by HTML Purifier.
-38. Allowed HTML elements and attributes. Required by HTML Purifier.
-
-41. Your Akismet key. If a key is provided, Akismet will be used to filter spam. If a key is not provided, a simple spam filtration technique will be used. For more information on Akismet, go to http://akismet.com/
-42. The URL of the guestbook page. Required by Akismet.
-
-45. If emoticon replacement is enabled, the keys will be replaced by the images.
+For an up-to-date description of configuration options, visit http://code.google.com/p/jibberbook/wiki/Installation
 
 
 ADMINISTRATION:
@@ -74,7 +49,7 @@ INSTALLING THEMES:
 
 Themes should be unzipped and uploaded to the 'theme' directory and should be contained in their own subdirectory.
 
-To enable a theme, in config.inc on line number 19, enter the name of the subdirectory of the theme.
+To enable a theme, in config.inc on line number 16, enter the name of the subdirectory of the theme.
 
 
 CREATING THEMES:
