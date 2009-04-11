@@ -8,7 +8,7 @@
 //	index.php
 //-------------------------------------------------------------------------------------
 
-session_start(); // start the session so we can get any form values or errors set by non-ajax users
+@session_start(); // start the session so we can get any form values or errors set by non-ajax users
 require_once('inc/includes.php');
 includes(array('actions/loadcomments.php', 'actions/transformxml.php'));
 
@@ -44,9 +44,9 @@ includes(array('actions/loadcomments.php', 'actions/transformxml.php'));
                     &mdash; A Free AJAX Guestbook
                 </div>
             </div>
-            <div id="jb_message" class="<?php echo $_SESSION['message_type']; ?>">
+            <div id="jb_message" class="<?php _s('message_type'); ?>">
                 <p>
-                    <?php echo $_SESSION['message']; ?>
+                    <?php _s('message'); ?>
                 </p>
             </div>
             <div id="content">
