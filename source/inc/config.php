@@ -32,7 +32,7 @@ define('JB_MYSQL_TABLE', '');
 
 // password for admin area
 define('JB_PASSWORD', 'password');
-define('JB_PWD_ENCODED', false);
+define('JB_PWD_ENCRYPTED', false);
 
 // For more information on HTML Purifier go to http://www.htmlpurifier.org/
 define('JB_ENABLE_HTML_PURIFIER', true);
