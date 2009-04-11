@@ -10,7 +10,7 @@
 
 require_once('../../inc/includes.php');
 
-$password = $_POST['jbpassword'];
+$password = (JB_PWD_ENCODED) ? md5($_POST['jbpassword']) : $_POST['jbpassword'];
 session_start();
 if ($password == JB_PASSWORD) {
   $_SESSION['admin'] = true;
