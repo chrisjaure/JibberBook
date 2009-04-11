@@ -12,10 +12,10 @@ $lang = array(
     "Caricamento...",
     
     "Your comment could not be added. Please try again later." =>
-    "Il tuo commento non puà essere inserito. Riprova più tardi.",
+    "Il tuo commento non può essere inserito. Riprova più tardi.",
     
     "More comments are loading. If you are using the scrollbar, please release your mouse." =>
-    "Stanno per essere visualizzati altri commenti. Utilizzare la barra di scorrimento per visualizzarli.",
+    "Si stanno caricando altri commenti. Devi rilasciare la barra di scorrimento per permettere il caricamento.",
     
     "Your comment has been added." =>
     "Il tuo commento è stato inserito.",
@@ -27,13 +27,13 @@ $lang = array(
     "Inserito il",
     
     "Website is not a valid URL." =>
-    "Indirizzo non valio per il sito web",
+    "Indirizzo web non valido.",
     
     "Name and Comment fields are required." =>
-    "Nome e Commento sono campi obbligatori.",
+    "Il Nome e il Commento sono obbligatori.",
     
     "This comment has been flagged as spam and has been added to the moderation queue." =>
-    "Questo commento è stato segnalato come spam ed è stato aggiunto tra i commenti da moderare.",
+    "Questo commento è stato riconosciuto come spam ed è stato aggiunto tra i commenti da moderare.",
     
     "Comment" =>
     "Commento",
@@ -45,16 +45,16 @@ $lang = array(
     "Sito web",
     
     "required" =>
-    "obbligatorio",
+    "richiesto",
     
     "Add Comment" =>
     "Aggiungi un commento",
     
     "Do not fill out this field." =>
-    "",
+    "Non scrivere in questo campo.",
     
     "Only the most recent comments are showing. You need JavaScript to view them all." =>
-    "Sono visualizzati solamente i commenti più recenti. E' necessario abilitare Javascript per visualizzarli tutti.",
+    "Sono mostrati solamente i commenti più recenti. E' necessario abilitare Javascript per visualizzarli tutti.",
     
     "Add it!" =>
     "Inserisci!",
@@ -63,10 +63,10 @@ $lang = array(
     "Commenti",
     
     "Log In" =>
-    "",
+    "Login",
     
     "Password" =>
-    "",
+    "Password",
     
     "All Ham" =>
     "Tutti i commenti",
@@ -78,13 +78,13 @@ $lang = array(
     "Commenti recenti",
     
     "Recent Spam" =>
-    "Spam Recenti",
+    "Spam Recente",
     
     "Delete All Spam" =>
-    "Cancella tutto lo Spam",
+    "Cancella tutti i messaggi di Spam",
     
     "Spam" =>
-    "",
+    "Spam",
     
     "Ham" =>
     "Inseriti",
@@ -105,10 +105,10 @@ $lang = array(
     "Il commento è stato cancellato.",
     
     "All spam comments have been deleted." =>
-    "Tutti i commenti Span sono stati cancellati.",
+    "I commenti Spam sono stati cancellati.",
     
     "No comments to load." =>
-    "Nessun commento è stato caricato.",
+    "Nessun commento da visualizzare.",
     
     "Incorrect password." =>
     "Password errata.",
