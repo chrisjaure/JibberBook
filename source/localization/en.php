@@ -38,7 +38,7 @@ $lang = array(
     "Please wait a bit before adding another comment." =>
     "",
     
-    "Your comment was not added because you are a suspected spammer." =>
+    "Your comment was discarded because it was flagged as spam." =>
     "",
     
     "Comment" =>

@@ -51,7 +51,7 @@ function validateForm(&$formData){
         if ($formData['spam']) {
             if ($_SESSION['time'] + 60 > time()) {
                 $errornum = '5';
-                $errordesc = __('Your comment was not added because you are a suspected spammer.');
+                $errordesc = __('Your comment was discarded because it was flagged as spam.');
             }
         } elseif ($_SESSION['time'] + 20 > time()) {
             $errornum = '5';
